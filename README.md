@@ -2,6 +2,8 @@
 
 Devon Wells' personal monorepo.
 
+![wells_banner](https://user-images.githubusercontent.com/2354127/192647235-2804eca3-b5fc-4d71-a5bc-eb86f55dbc80.png)
+
 ## Contents
 
 - [About](#about)
