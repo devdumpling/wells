@@ -7,11 +7,13 @@ importers:
       '@changesets/cli': ^2.24.4
       eslint-config-custom: workspace:*
       prettier: latest
+      rimraf: ^3.0.2
       turbo: latest
     devDependencies:
       '@changesets/cli': 2.24.4
       eslint-config-custom: link:packages/eslint-config-custom
       prettier: 2.7.1
+      rimraf: 3.0.2
       turbo: 1.5.3
 
   apps/docs:
