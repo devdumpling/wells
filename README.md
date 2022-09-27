@@ -1,35 +1,50 @@
-# Turborepo starter
+# Wells
 
-This is an official pnpm starter turborepo.
+Devon Wells' personal monorepo.
 
-## What's inside?
+## Contents
 
-This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
+- [About](#about)
+- [Apps](#apps)
+- [Packages](#packages)
+- [Usage](#usage)
+- [Useful Links](#useful-links)
 
-### Apps and Packages
+## About
+
+This is a monorepo for my personal projects. It's a work in progress, and I'm tweaking config ATM. 
+Ideally it will contain a bunch of apps and packages that I use in my day-to-day work, as well as my blog and portfolio.
+
+I've grown accustomed to working in frontend monorepos and find them enjoyable. 
+
+### Stack
+
+- [Turborepo](https://turborepo.com/) for managing the monorepo
+- [Changesets](https://github.com/changesets/changesets) for versioning and releases
+- [Typescript](https://www.typescriptlang.org/) because it's 2022 and I prefer the type safety and code completion
+- [Next.js](https://nextjs.org/) for applications 
+- [React](https://reactjs.org/) for packages, components, and so forth
+- [ESLint](https://eslint.org/) for code linting
+- [Prettier](https://prettier.io) for code formatting
+
+## Apps
 
 - `docs`: a [Next.js](https://nextjs.org) app
 - `web`: another [Next.js](https://nextjs.org) app
+
+## Packages
+
 - `ui`: a stub React component library shared by both `web` and `docs` applications
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## Usage
 
 ### Build
 
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 pnpm run build
 ```
 
@@ -38,18 +53,16 @@ pnpm run build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
 pnpm run dev
 ```
 
-### Remote Caching
+### TurobRepo Remote Caching
 
 Turborepo can use a technique known as [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
 
 By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd my-turborepo
 pnpm dlx turbo login
 ```
 
@@ -63,7 +76,9 @@ pnpm dlx turbo link
 
 ## Useful Links
 
-Learn more about the power of Turborepo:
+A collection of useful links for working in this monorepo
+
+### TurboRepo 
 
 - [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
 - [Caching](https://turborepo.org/docs/core-concepts/caching)
