@@ -8,23 +8,24 @@ Devon Wells' personal monorepo.
 
 - [About](#about)
 - [Apps](#apps)
+- [Docs](#docs)
 - [Packages](#packages)
 - [Usage](#usage)
 - [Useful Links](#useful-links)
 
 ## About
 
-This is a monorepo for my personal projects. It's a work in progress, and I'm tweaking config ATM. 
+This is a monorepo for my personal projects. It's a work in progress, and I'm tweaking config ATM.
 Ideally it will contain a bunch of apps and packages that I use in my day-to-day work, as well as my blog and portfolio.
 
-I've grown accustomed to working in frontend monorepos and find them enjoyable. 
+I've grown accustomed to working in frontend monorepos and find them enjoyable.
 
 ### Stack
 
 - [Turborepo](https://turborepo.com/) for managing the monorepo
 - [Changesets](https://github.com/changesets/changesets) for versioning and releases
 - [Typescript](https://www.typescriptlang.org/) because it's {CURRENT_YEAR} and I prefer the type safety and code completion
-- [Next.js](https://nextjs.org/) for applications 
+- [Next.js](https://nextjs.org/) for applications
 - [React](https://reactjs.org/) for packages, components, and so forth
 - [Tsup](https://github.com/egoist/tsup) for bundling packages (powered by esbuild)
 - [ESLint](https://eslint.org/) for code linting
@@ -32,14 +33,19 @@ I've grown accustomed to working in frontend monorepos and find them enjoyable.
 
 ## Apps
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
+- ### [`web`](https://github.com/devdumpling/wells/tree/main/apps/web): a stub [Next.js](https://nextjs.org) app
 
 ## Packages
 
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+- ### [`ui`](https://github.com/devdumpling/wells/tree/main/packages/ui): a stub React component library
+- ### [`eslint-config-custom`](https://github.com/devdumpling/wells/tree/main/packages/eslint-config-custom): `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- ### [`tsconfig`](https://github.com/devdumpling/wells/tree/main/packages/tsconfig): `tsconfig.json`s used throughout the monorepo
+
+## Docs
+
+_I use [Nextra](https://nextra.vercel.app/) to generate doc sites for packages. Each doc app can be found in `docs/` and is deployed to Vercel._
+
+- ### [`wells`](https://wells-docs.vercel.app/) -- documentation on the monorepo (this repo)
 
 ## Usage
 
@@ -81,7 +87,7 @@ pnpm dlx turbo link
 
 A collection of useful links for working in this monorepo
 
-### TurboRepo 
+### TurboRepo
 
 - [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
 - [Caching](https://turborepo.org/docs/core-concepts/caching)
