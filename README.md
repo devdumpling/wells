@@ -23,7 +23,7 @@ I've grown accustomed to working in frontend monorepos and find them enjoyable.
 
 - [Turborepo](https://turborepo.com/) for managing the monorepo
 - [Changesets](https://github.com/changesets/changesets) for versioning and releases
-- [Typescript](https://www.typescriptlang.org/) because it's 2022 and I prefer the type safety and code completion
+- [Typescript](https://www.typescriptlang.org/) because it's {CURRENT_YEAR} and I prefer the type safety and code completion
 - [Next.js](https://nextjs.org/) for applications 
 - [React](https://reactjs.org/) for packages, components, and so forth
 - [Tsup](https://github.com/egoist/tsup) for bundling packages (powered by esbuild)
