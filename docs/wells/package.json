@@ -1,27 +1,26 @@
 {
-  "name": "docs",
+  "name": "wells",
   "version": "0.0.1",
   "private": true,
+  "description": "Docs site for Wells monorepo",
   "scripts": {
     "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "author": "devdumpling",
   "dependencies": {
     "next": "12.3.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "ui": "workspace:*"
+    "nextra": "^1.1.0",
+    "nextra-theme-docs": "^1.2.2",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "eslint-config-custom": "workspace:*",
+    "typescript": "^4.5.3",
     "eslint": "7.32.0",
-    "next-transpile-modules": "9.0.0",
     "tsconfig": "workspace:*",
-    "@types/node": "^17.0.12",
-    "@types/react": "18.0.17",
-    "typescript": "^4.5.3"
+    "eslint-config-custom": "workspace:*"
   }
 }
