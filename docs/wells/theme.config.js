@@ -1,6 +1,7 @@
 export default {
   github: "https://github.com/devdumpling/wells",
-  docsRepositoryBase: "https://github.com/devdumpling/wells/blob/main",
+  docsRepositoryBase:
+    "https://github.com/devdumpling/wells/tree/main/docs/wells",
   projectLink: "httpsL//github.com/devdumpling/wells",
   titleSuffix: " – Wells",
   logo: (
