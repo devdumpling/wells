@@ -12,6 +12,7 @@
     "clean": "turbo run clean && rimraf node_modules",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.24.4",
     "eslint-config-custom": "workspace:*",
+    "eslint": "^7.32.0",
     "prettier": "latest",
     "rimraf": "^3.0.2",
     "turbo": "latest"
