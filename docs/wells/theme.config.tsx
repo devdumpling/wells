@@ -1,18 +1,28 @@
+import type { DocsThemeConfig } from "nextra-theme-docs";
+import { useRouter } from "next/router";
+
+const Logo = (
+  <>
+    <span className="mr-2 font-extrabold hidden md:inline">Wells</span>
+    <span className="text-gray-600 font-normal hidden md:inline">
+      Dev&apos;s personal monorepo
+    </span>
+  </>
+);
+
+const TitleSuffix = () => {
+  const { route } = useRouter();
+  if (route === "/") return "";
+  return " – Nextra";
+};
+
 export default {
-  github: "https://github.com/devdumpling/wells",
+  project: { link: "https://github.com/devdumpling/wells" },
   docsRepositoryBase:
     "https://github.com/devdumpling/wells/tree/main/docs/wells",
-  projectLink: "httpsL//github.com/devdumpling/wells",
-  titleSuffix: " – Wells",
-  logo: (
-    <>
-      <span className="mr-2 font-extrabold hidden md:inline">Wells</span>
-      <span className="text-gray-600 font-normal hidden md:inline">
-        Dev's monorepo
-      </span>
-    </>
-  ),
-  head: (
+  logo: Logo,
+  titleSuffix: TitleSuffix,
+  head: () => (
     <>
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="theme-color" content="#ffffff" />
@@ -57,11 +67,21 @@ export default {
       />
     </>
   ),
-  search: true,
-  prevLinks: true,
-  nextLinks: true,
-  footer: true,
-  footerEditLink: "Edit this page on GitHub",
-  footerText: <>MIT {new Date().getFullYear()} © devdumpling.</>,
-  unstable_faviconGlyph: "W",
-};
+  navigation: {
+    prev: true,
+    next: true,
+  },
+  toc: {
+    float: true,
+  },
+  sidebar: {
+    defaultMenuCollapsed: true,
+    subtitle: ({ title }: { title: string }) => <>{title}</>,
+  },
+  footer: {
+    text: "© 2021 Dev Wells",
+  },
+  editLink: {
+    text: "Edit this page on GitHub",
+  },
+} as DocsThemeConfig;
