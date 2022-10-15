@@ -1,0 +1,17 @@
+{
+  "name": "blog",
+  "prviate": true,
+  "version": "0.0.1",
+  "description": "Dev Wells' Blog",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
+  },
+  "keywords": ["blog"],
+  "author": "Devon Wells",
+  "license": "ISC"
+}
