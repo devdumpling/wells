@@ -27,6 +27,7 @@ export default {
       {meta.author && <meta name="author" content={meta.author} />}
     </>
   ),
+  darkMode: true,
   readMore: "Read More →",
   navs: [
     {
@@ -34,7 +35,7 @@ export default {
       name: "Code",
     },
     {
-      url: "https://linkedin.com/in/devdumpling/",
+      url: "https://linkedin.com/in/devon-a-wells/",
       name: "Pretend",
     },
   ],
