@@ -33,7 +33,7 @@ I've grown accustomed to working in frontend monorepos and find them enjoyable.
 
 ## Apps
 
-- ### [`web`](https://github.com/devdumpling/wells/tree/main/apps/web): a stub [Next.js](https://nextjs.org) app
+- ### [`main`](https://github.com/devdumpling/wells/tree/main/apps/main): a stub [Next.js](https://nextjs.org) app
 
 ## Packages
 
