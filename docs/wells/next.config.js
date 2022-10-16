@@ -7,4 +7,7 @@ const withNextra = require("nextra")({
   },
   unstable_defaultShowCopyCode: true,
 });
-module.exports = withNextra();
+module.exports = withNextra({
+  reactStrictMode: true,
+  basePath: "/docs",
+});
