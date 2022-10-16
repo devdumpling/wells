@@ -1,5 +1,12 @@
 # wells
 
+## 0.0.4
+
+### Patch Changes
+
+- a9cdde2: Adds docs to multizone host routing
+- 07e2269: Adds support in main next.config.js for routing docs
+
 ## 0.0.3
 
 ### Patch Changes
