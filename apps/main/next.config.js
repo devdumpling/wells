@@ -1,6 +1,6 @@
 const withTM = require("next-transpile-modules")(["ui"]);
 
-const { BLOG_URL } = process.env;
+const { BLOG_URL, DOCS_URL } = process.env;
 
 module.exports = withTM({
   reactStrictMode: true,
@@ -16,6 +16,14 @@ module.exports = withTM({
       {
         source: "/blog/:path*",
         destination: `${BLOG_URL}/blog/:path*`,
+      },
+      {
+        source: "/docs",
+        destination: `${DOCS_URL}/docs`,
+      },
+      {
+        source: "/docs/:path*",
+        destination: `${DOCS_URL}/docs/:path*`,
       },
     ];
   },
