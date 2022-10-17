@@ -1,0 +1,99 @@
+# ts-config
+
+Shared configuration for TypeScript projects in the monorepo.
+
+It's handy to have a shared configuration for TypeScript projects in the monorepo, so that we can keep all the projects in sync. This package can be extended and customized if necessary in consuming packages. 
+
+## Usage
+
+In a consuming package, create a `tsconfig.json`. Then use the `extends` field to extend from the shared config that matches your project.
+
+For example, here's the tsconfig for `apps/blog`
+
+```json
+{
+  "extends": "tsconfig/nextjs.json",
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": false,
+    "declarationMap": false
+  }
+}
+```
+
+## Configs
+
+### `base`
+
+```json
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "composite": false,
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "preserveSymlinks": true
+  },
+  "exclude": ["node_modules"]
+}
+```
+
+### `nextjs`
+
+> Extends `base`
+
+```json
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Next.js",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"    
+  },
+  "include": ["src", "next-env.d.ts"],
+  "exclude": ["node_modules"]
+}
+```
+
+### `react-library`
+
+> Extends `base`
+
+```json
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "React Library",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["ES2015"],
+    "module": "ESNext",
+    "target": "es6"
+  }
+}
+```
