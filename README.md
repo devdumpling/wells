@@ -15,8 +15,9 @@ Devon Wells' personal monorepo.
 
 ## About
 
-This is a monorepo for my personal projects. It's a work in progress, and I'm tweaking config ATM.
-Ideally it will contain a bunch of apps and packages that I use in my day-to-day work, as well as my blog and portfolio.
+This is a monorepo for my personal projects.
+
+Currently it hosts a multizonal Next.js app that routes to a blog and a docs app. It also hosts a few packages that are used by the apps.
 
 I've grown accustomed to working in frontend monorepos and find them enjoyable.
 
@@ -33,11 +34,13 @@ I've grown accustomed to working in frontend monorepos and find them enjoyable.
 
 ## Apps
 
-- ### [`main`](https://github.com/devdumpling/wells/tree/main/apps/main): a stub [Next.js](https://nextjs.org) app
+- ### [`main`](https://github.com/devdumpling/wells/tree/main/apps/main): a multizonal host [Next.js](https://nextjs.org) app
+- ### [`blog`](https://github.com/devdumpling/wells/tree/main/apps/blog): my simple Markdown blog
+- ### [`docs/wells`](https://github.com/devdumpling/wells/tree/main/docs/wells): documentation for this monorepo
 
 ## Packages
 
-- ### [`ui`](https://github.com/devdumpling/wells/tree/main/packages/ui): a stub React component library
+- ### [`ui`](https://github.com/devdumpling/wells/tree/main/packages/ui): a stub React component library (not yet developed)
 - ### [`eslint-config-custom`](https://github.com/devdumpling/wells/tree/main/packages/eslint-config-custom): `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - ### [`tsconfig`](https://github.com/devdumpling/wells/tree/main/packages/tsconfig): `tsconfig.json`s used throughout the monorepo
 
@@ -45,7 +48,7 @@ I've grown accustomed to working in frontend monorepos and find them enjoyable.
 
 _I use [Nextra](https://nextra.vercel.app/) to generate doc sites for packages. Each doc app can be found in `docs/` and is deployed to Vercel._
 
-- ### [`wells`](https://wells-docs.vercel.app/) -- documentation on the monorepo (this repo)
+- ### [`docs/wells`](https://helloim.dev/docs/) -- documentation on the monorepo
 
 ## Usage
 
@@ -59,7 +62,7 @@ pnpm run build
 
 ### Develop
 
-To develop all apps and packages, run the following command:
+To develop all apps and packages in parallel, run the following command:
 
 ```
 pnpm run dev
