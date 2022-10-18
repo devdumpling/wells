@@ -1,5 +1,11 @@
 # main
 
+## 0.0.5
+
+### Patch Changes
+
+- 24bf238: Adds favicons to each app
+
 ## 0.0.4
 
 ### Patch Changes
