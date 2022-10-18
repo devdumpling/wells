@@ -1,5 +1,11 @@
 # wells
 
+## 0.1.0
+
+### Minor Changes
+
+- 07c8d65: Added base content across the docs pages and meta config for each page.
+
 ## 0.0.4
 
 ### Patch Changes
