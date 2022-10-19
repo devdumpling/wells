@@ -1,5 +1,11 @@
 # blog
 
+## 0.0.4
+
+### Patch Changes
+
+- f5aa58f: Migrate stories from medium
+
 ## 0.0.3
 
 ### Patch Changes
