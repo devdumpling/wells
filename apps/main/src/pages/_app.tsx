@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="apple-mobile-web-app-title" content="Wells" />
         <meta name="application-name" content="Wells" />
         <meta name="theme-color" content="#ffffff" />
+        <title>Wells</title>
       </Head>
       <Component {...pageProps} />
     </>
