@@ -1,5 +1,11 @@
 # main
 
+## 0.0.6
+
+### Patch Changes
+
+- 481946e: Move files to `src` and introduce vanilla-extract for styles
+
 ## 0.0.5
 
 ### Patch Changes

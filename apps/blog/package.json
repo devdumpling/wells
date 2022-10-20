@@ -1,7 +1,7 @@
 {
   "name": "blog",
   "prviate": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Dev Wells' Blog",
   "main": "index.js",
   "scripts": {
