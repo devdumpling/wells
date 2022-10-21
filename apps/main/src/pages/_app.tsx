@@ -1,10 +1,18 @@
 import { AppProps } from "next/app";
+import { font } from "src/styles/global.css";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <link
+          rel="preload"
+          href="/fonts/InterDisplay-roman.var.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -28,7 +36,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#ffffff" />
         <title>Wells</title>
       </Head>
-      <Component {...pageProps} />
+      <div className={font}>
+        <Component {...pageProps} />
+      </div>
     </>
   );
 }
