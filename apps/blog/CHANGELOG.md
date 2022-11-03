@@ -1,5 +1,11 @@
 # blog
 
+## 0.1.0
+
+### Minor Changes
+
+- 2bd773a: Post: A Bartender's Perspective on Software
+
 ## 0.0.4
 
 ### Patch Changes
