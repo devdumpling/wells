@@ -1,5 +1,11 @@
 # main
 
+## 0.0.7
+
+### Patch Changes
+
+- 01be378: Basic font optimization and some minimal content while I work.
+
 ## 0.0.6
 
 ### Patch Changes
