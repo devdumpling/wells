@@ -1,5 +1,11 @@
 # eslint-config-custom
 
+## 0.0.4
+
+### Patch Changes
+
+- 5442d31: Upgrade to Next 13
+
 ## 0.0.3
 
 ### Patch Changes
