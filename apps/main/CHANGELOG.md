@@ -1,5 +1,12 @@
 # main
 
+## 0.0.9
+
+### Patch Changes
+
+- Updated dependencies [a89b4db]
+  - ui@0.0.3
+
 ## 0.0.8
 
 ### Patch Changes

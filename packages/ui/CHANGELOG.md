@@ -1,5 +1,11 @@
 # ui
 
+## 0.0.3
+
+### Patch Changes
+
+- a89b4db: remove unused button in prep for design system
+
 ## 0.0.2
 
 ### Patch Changes
