@@ -17,6 +17,7 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint lib/**/*.ts*",
+    "lint:fix": "pnpm lint --fix",
     "dev": "vite",
     "build": "vite build"
   },
