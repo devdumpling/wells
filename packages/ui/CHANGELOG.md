@@ -1,5 +1,12 @@
 # ui
 
+## 0.0.4
+
+### Patch Changes
+
+- f1ad37b: Add vite library mode bundling
+- 0da389b: ui: Add lint:fix
+
 ## 0.0.3
 
 ### Patch Changes
