@@ -12,6 +12,7 @@
   "files": [
     "dist"
   ],
+  "types": "dist/index.d.ts",
   "keywords": [
     "design system",
     "tokens",
