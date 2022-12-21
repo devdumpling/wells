@@ -1,0 +1,21 @@
+{
+  "name": "pal",
+  "version": "0.0.1",
+  "description": "Pal, a simple to use design system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "design system",
+    "react",
+    "typescript"
+  ],
+  "author": "Devon Wells",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.2"
+  }
+}
