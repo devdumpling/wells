@@ -1,13 +1,14 @@
 {
-  "name": "@pal/tokens",
+  "name": "@pal/system",
   "version": "0.0.1",
-  "description": "Tokens for the Pal design system.",
-  "main": "dist/index.js",
+  "description": "Utility classes for Pal design system.",
+  "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
     "build": "run-p build:dist build:types",
     "build:dist": "swc lib -d dist --source-maps",
-    "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist"
+    "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
     "dist"
@@ -15,18 +16,22 @@
   "types": "dist/index.d.ts",
   "keywords": [
     "design system",
-    "tokens",
     "react",
     "typescript"
   ],
   "author": "Devon Wells",
   "license": "MIT",
   "devDependencies": {
+    "@pal/tokens": "workspace:*",
     "@swc/cli": "^0.1.57",
     "@swc/core": "^1.3.24",
     "eslint-config-custom": "workspace:*",
     "npm-run-all": "^4.1.5",
     "tsconfig": "workspace:*",
     "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.9.1",
+    "@vanilla-extract/sprinkles": "^1.5.1"
   }
 }

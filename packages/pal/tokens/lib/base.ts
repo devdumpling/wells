@@ -44,7 +44,7 @@ export const typography = {
   },
 };
 
-export const spacing = {
+export const space = {
   none: "0",
   tiny: "0.25rem",
   small: "0.5rem",
