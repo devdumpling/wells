@@ -1,5 +1,11 @@
 # main
 
+## 0.0.12
+
+### Patch Changes
+
+- 1b6e96c: Updated package.json dependency patterns
+
 ## 0.0.11
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # wells
 
+## 0.1.2
+
+### Patch Changes
+
+- 1b6e96c: Updated package.json dependency patterns
+
 ## 0.1.1
 
 ### Patch Changes
