@@ -1,5 +1,13 @@
 # main
 
+## 0.0.11
+
+### Patch Changes
+
+- 3df9de9: Minor cleanup to scripts
+- Updated dependencies [3df9de9]
+  - ui@0.0.5
+
 ## 0.0.10
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # ui
 
+## 0.0.5
+
+### Patch Changes
+
+- 3df9de9: Minor cleanup to scripts
+
 ## 0.0.4
 
 ### Patch Changes
