@@ -29,8 +29,19 @@
     "rimraf": "^3.0.2",
     "turbo": "latest"
   },
+  "pnpm": {
+    "overrides": {
+      "@types/react": "^18.0.27",
+      "@types/react-dom": "^18.0.10",
+      "eslint": "^7.32.0",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "next": "^13.1.4"
+    }
+  },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=14.0.0",
+    "pnpm": ">=7.0.0"
   },
   "packageManager": "pnpm@7.25.1"
 }
