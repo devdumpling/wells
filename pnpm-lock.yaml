@@ -61,7 +61,7 @@ importers:
       next: 13.0.7_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      ui: link:../../packages/ui
+      ui: link:../../packages/deprecated/ui
     devDependencies:
       '@types/node': 17.0.45
       '@types/react': 18.0.21
@@ -97,6 +97,82 @@ importers:
       tsconfig: link:../../packages/tsconfig
       typescript: 4.8.3
 
+  packages/deprecated/pal:
+    specifiers:
+      eslint-config-custom: workspace:*
+      tsconfig: workspace:*
+      typescript: ^4.5.2
+    devDependencies:
+      eslint-config-custom: link:../../eslint-config-custom
+      tsconfig: link:../../tsconfig
+      typescript: 4.9.4
+
+  packages/deprecated/pal/core/system:
+    specifiers:
+      '@pal/tokens': workspace:*
+      '@swc/cli': ^0.1.57
+      '@swc/core': ^1.3.24
+      '@vanilla-extract/css': ^1.9.1
+      '@vanilla-extract/sprinkles': ^1.5.1
+      eslint-config-custom: workspace:*
+      npm-run-all: ^4.1.5
+      tsconfig: workspace:*
+      typescript: ^4.5.2
+    dependencies:
+      '@vanilla-extract/css': 1.9.1
+      '@vanilla-extract/sprinkles': 1.5.1_@vanilla-extract+css@1.9.1
+    devDependencies:
+      '@pal/tokens': link:../../tokens
+      '@swc/cli': 0.1.57_@swc+core@1.3.24
+      '@swc/core': 1.3.24
+      eslint-config-custom: link:../../../../eslint-config-custom
+      npm-run-all: 4.1.5
+      tsconfig: link:../../../../tsconfig
+      typescript: 4.9.4
+
+  packages/deprecated/pal/tokens:
+    specifiers:
+      '@swc/cli': ^0.1.57
+      '@swc/core': ^1.3.24
+      eslint-config-custom: workspace:*
+      npm-run-all: ^4.1.5
+      tsconfig: workspace:*
+      typescript: ^4.5.2
+    devDependencies:
+      '@swc/cli': 0.1.57_@swc+core@1.3.24
+      '@swc/core': 1.3.24
+      eslint-config-custom: link:../../../eslint-config-custom
+      npm-run-all: 4.1.5
+      tsconfig: link:../../../tsconfig
+      typescript: 4.9.4
+
+  packages/deprecated/ui:
+    specifiers:
+      '@types/react': ^18.0.17
+      '@types/react-dom': ^18.0.6
+      '@vitejs/plugin-react': ^2.2.0
+      eslint: ^7.32.0
+      eslint-config-custom: workspace:*
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      tsconfig: workspace:*
+      typescript: ^4.5.2
+      vite: ^3.2.3
+      vite-plugin-dts: ^1.7.0
+    dependencies:
+      react-dom: 18.2.0_react@18.2.0
+    devDependencies:
+      '@types/react': 18.0.21
+      '@types/react-dom': 18.0.6
+      '@vitejs/plugin-react': 2.2.0_vite@3.2.3
+      eslint: 7.32.0
+      eslint-config-custom: link:../../eslint-config-custom
+      react: 18.2.0
+      tsconfig: link:../../tsconfig
+      typescript: 4.9.4
+      vite: 3.2.3
+      vite-plugin-dts: 1.7.0_vite@3.2.3
+
   packages/eslint-config-custom:
     specifiers:
       '@typescript-eslint/parser': ^5.40.0
@@ -130,84 +206,8 @@ importers:
       react-dom: 18.2.0_react@18.2.0
       typescript: 4.8.3
 
-  packages/pal:
-    specifiers:
-      eslint-config-custom: workspace:*
-      tsconfig: workspace:*
-      typescript: ^4.5.2
-    devDependencies:
-      eslint-config-custom: link:../eslint-config-custom
-      tsconfig: link:../tsconfig
-      typescript: 4.8.4
-
-  packages/pal/core/system:
-    specifiers:
-      '@pal/tokens': workspace:*
-      '@swc/cli': ^0.1.57
-      '@swc/core': ^1.3.24
-      '@vanilla-extract/css': ^1.9.1
-      '@vanilla-extract/sprinkles': ^1.5.1
-      eslint-config-custom: workspace:*
-      npm-run-all: ^4.1.5
-      tsconfig: workspace:*
-      typescript: ^4.5.2
-    dependencies:
-      '@vanilla-extract/css': 1.9.1
-      '@vanilla-extract/sprinkles': 1.5.1_@vanilla-extract+css@1.9.1
-    devDependencies:
-      '@pal/tokens': link:../../tokens
-      '@swc/cli': 0.1.57_@swc+core@1.3.24
-      '@swc/core': 1.3.24
-      eslint-config-custom: link:../../../eslint-config-custom
-      npm-run-all: 4.1.5
-      tsconfig: link:../../../tsconfig
-      typescript: 4.8.4
-
-  packages/pal/tokens:
-    specifiers:
-      '@swc/cli': ^0.1.57
-      '@swc/core': ^1.3.24
-      eslint-config-custom: workspace:*
-      npm-run-all: ^4.1.5
-      tsconfig: workspace:*
-      typescript: ^4.5.2
-    devDependencies:
-      '@swc/cli': 0.1.57_@swc+core@1.3.24
-      '@swc/core': 1.3.24
-      eslint-config-custom: link:../../eslint-config-custom
-      npm-run-all: 4.1.5
-      tsconfig: link:../../tsconfig
-      typescript: 4.8.4
-
   packages/tsconfig:
     specifiers: {}
-
-  packages/ui:
-    specifiers:
-      '@types/react': ^18.0.17
-      '@types/react-dom': ^18.0.6
-      '@vitejs/plugin-react': ^2.2.0
-      eslint: ^7.32.0
-      eslint-config-custom: workspace:*
-      react: ^18.2.0
-      react-dom: ^18.2.0
-      tsconfig: workspace:*
-      typescript: ^4.5.2
-      vite: ^3.2.3
-      vite-plugin-dts: ^1.7.0
-    dependencies:
-      react-dom: 18.2.0_react@18.2.0
-    devDependencies:
-      '@types/react': 18.0.21
-      '@types/react-dom': 18.0.6
-      '@vitejs/plugin-react': 2.2.0_vite@3.2.3
-      eslint: 7.32.0
-      eslint-config-custom: link:../eslint-config-custom
-      react: 18.2.0
-      tsconfig: link:../tsconfig
-      typescript: 4.8.3
-      vite: 3.2.3
-      vite-plugin-dts: 1.7.0_vite@3.2.3
 
 packages:
 
@@ -442,7 +442,7 @@ packages:
       '@babel/helper-module-imports': 7.18.6
       '@babel/helper-plugin-utils': 7.19.0
       '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.20.2
-      '@babel/types': 7.19.4
+      '@babel/types': 7.20.2
     dev: true
 
   /@babel/runtime-corejs3/7.19.1:
@@ -484,15 +484,6 @@ packages:
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@babel/types/7.19.4:
-    resolution: {integrity: sha512-M5LK7nAeS6+9j7hAq+b3fQs+pNfUtTGq+yFFfHnauFA8zQtLRfmuipmsKDKKLuyG+wC8ABW43A153YNawNTEtw==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/helper-string-parser': 7.19.4
-      '@babel/helper-validator-identifier': 7.19.1
-      to-fast-properties: 2.0.0
     dev: true
 
   /@babel/types/7.20.2:
@@ -5466,6 +5457,7 @@ packages:
 
   /sourcemap-codec/1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
+    deprecated: Please use @jridgewell/sourcemap-codec instead
     dev: true
 
   /space-separated-tokens/2.0.1:
