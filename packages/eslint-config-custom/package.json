@@ -3,6 +3,9 @@
   "version": "0.0.4",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "clean": "rimraf node_modules"
+  },
   "dependencies": {
     "eslint": "^7.23.0",
     "eslint-config-next": "^13.0.2",

@@ -4,6 +4,7 @@
   "description": "Pal, a simple to use design system.",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf node_modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

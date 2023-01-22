@@ -1,5 +1,4 @@
 import { AppProps } from "next/app";
-import { font } from "src/styles/global.css";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -36,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#ffffff" />
         <title>Wells</title>
       </Head>
-      <div className={font}>
+      <div>
         <Component {...pageProps} />
       </div>
     </>

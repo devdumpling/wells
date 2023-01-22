@@ -4,6 +4,7 @@
   "private": true,
   "description": "Docs site for Wells monorepo",
   "scripts": {
+    "clean": "rimraf .next && rimraf node_modules",
     "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",

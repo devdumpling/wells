@@ -16,6 +16,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf dist && rimraf node_modules",
     "lint": "eslint lib/**/*.ts*",
     "lint:fix": "pnpm lint --fix",
     "dev": "vite",

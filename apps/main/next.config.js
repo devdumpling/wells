@@ -1,10 +1,6 @@
-// https://vanilla-extract.style/documentation/integrations/next/
-const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
-const withVanillaExtract = createVanillaExtractPlugin();
-
 const { BLOG_URL, DOCS_URL } = process.env;
 
-module.exports = withVanillaExtract({
+module.exports = {
   reactStrictMode: true,
   async rewrites() {
     return [
@@ -29,4 +25,4 @@ module.exports = withVanillaExtract({
       },
     ];
   },
-});
+};
