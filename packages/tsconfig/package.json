@@ -6,5 +6,9 @@
     "base.json",
     "nextjs.json",
     "react-library.json"
-  ]
+  ],
+  "scripts": {
+    "clean": "rimraf node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }

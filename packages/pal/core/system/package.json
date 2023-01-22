@@ -4,7 +4,7 @@
   "description": "Utility classes for Pal design system.",
   "main": "index.js",
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf dist && rimraf node_modules",
     "build": "run-p build:dist build:types",
     "build:dist": "swc lib -d dist --source-maps",
     "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist",
