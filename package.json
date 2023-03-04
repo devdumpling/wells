@@ -9,17 +9,18 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "changeset": "changeset",
     "clean": "turbo run clean && rimraf node_modules",
     "dev": "turbo run dev --parallel",
     "dev:main": "turbo run dev --filter=main",
     "dev:docs": "turbo run dev --filter=wells",
     "dev:blog": "turbo run dev --filter=blog",
-    "lint": "turbo run lint",
-    "lint:fix": "turbo run lint:fix",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish"
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",            
+    "release": "turbo run build --filter=docs^... && changeset publish",
+    "reset": "pnpm clean && pnpm install",
+    "version-packages": "changeset version"
   },
   "devDependencies": {
     "@changesets/cli": "^2.24.4",
@@ -36,7 +37,7 @@
       "eslint": "^7.32.0",
       "react": "^18.2.0",
       "react-dom": "^18.2.0",
-      "next": "^13.1.4"
+      "next": "^13.2.0"
     }
   },
   "engines": {
