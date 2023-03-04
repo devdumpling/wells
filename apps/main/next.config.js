@@ -1,7 +1,11 @@
 const { BLOG_URL, DOCS_URL } = process.env;
 
+/** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
+  experimental: {
+    appDir: true,
+  },
   async rewrites() {
     return [
       /**

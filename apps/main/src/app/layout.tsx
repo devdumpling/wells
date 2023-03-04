@@ -1,5 +1,10 @@
 import "./globals.css";
 
+export const metadata = {
+  title: "Wells",
+  description: "Wellscome to my website.",
+};
+
 export default function RootLayout({
   children,
 }: {
