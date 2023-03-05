@@ -18,8 +18,11 @@
   "devDependencies": {
     "@types/node": "^18.11.18",
     "@types/react": "workspace:*",
+    "autoprefixer": "^10.4.13",
     "eslint": "workspace:*",
     "eslint-config-custom": "workspace:*",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
     "tsconfig": "workspace:*",
     "typescript": "^4.9.4"
   }
