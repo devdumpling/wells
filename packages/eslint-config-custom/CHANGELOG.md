@@ -1,5 +1,11 @@
 # eslint-config-custom
 
+## 0.1.0
+
+### Minor Changes
+
+- 9389483: Tailwind updates
+
 ## 0.0.5
 
 ### Patch Changes
