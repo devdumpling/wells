@@ -1,5 +1,11 @@
 # blog
 
+## 0.2.0
+
+### Minor Changes
+
+- 1f4c6e1: Post: momentum post
+
 ## 0.1.2
 
 ### Patch Changes
