@@ -5,10 +5,6 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]
     },
-    "main#build": {
-      "dependsOn": ["^build", "$BLOG_URL", "$DOCS_URL"],
-      "outputs": [".next/**"]
-    },
     "lint": {
       "outputs": []
     },
@@ -16,10 +12,12 @@
       "outputs": []
     },
     "dev": {
-      "cache": false
+      "cache": false,
+      "persistent": true
     },
     "start": {
-      "cache": false
+      "cache": false,
+      "persistent": true
     },
     "clean": {
       "cache": false

@@ -7,7 +7,8 @@
     "**/*.ts",
     "**/*.tsx",
     "next.config.js",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "/Users/devonwells/Development/wells/apps/main/.next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
