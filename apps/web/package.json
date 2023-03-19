@@ -11,16 +11,20 @@
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "workspace:*",
+    "react": "workspace:*",
+    "react-dom": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "18.15.3",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "^18.0.6",
-    "eslint": "8.36.0",
+    "@types/react": "workspace:*",
+    "@types/react-dom": "workspace:*",
+    "autoprefixer": "^10.4.13",
+    "eslint": "workspace:*",
     "eslint-config-custom": "workspace:*",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "tsconfig": "workspace:*",
     "typescript": "5.0.2"
   }
 }
