@@ -53,35 +53,6 @@ importers:
       tsconfig: link:../../packages/tsconfig
       typescript: 4.9.4
 
-  apps/main:
-    specifiers:
-      '@types/node': ^18.11.18
-      '@types/react': ^18.0.27
-      autoprefixer: ^10.4.13
-      eslint: 8.36.0
-      eslint-config-custom: workspace:*
-      next: ^13.2.0
-      postcss: ^8.4.21
-      react: ^18.2.0
-      react-dom: ^18.2.0
-      tailwindcss: ^3.2.7
-      tsconfig: workspace:*
-      typescript: ^4.9.4
-    dependencies:
-      next: 13.2.3_biqbaboplfbrettd7655fr4n2y
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-    devDependencies:
-      '@types/node': 18.11.18
-      '@types/react': 18.0.27
-      autoprefixer: 10.4.13_postcss@8.4.21
-      eslint: 8.36.0
-      eslint-config-custom: link:../../packages/eslint-config-custom
-      postcss: 8.4.21
-      tailwindcss: 3.2.7_postcss@8.4.21
-      tsconfig: link:../../packages/tsconfig
-      typescript: 4.9.4
-
   apps/web:
     specifiers:
       '@types/node': 18.15.3
