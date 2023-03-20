@@ -4,6 +4,7 @@ const { DOCS_URL } = process.env;
 const nextConfig = {
   experimental: {
     appDir: true,
+    mdxRs: true,
   },
   async rewrites() {
     return [
@@ -19,4 +20,6 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+const withMDX = require("@next/mdx")();
+
+module.exports = withMDX(nextConfig);
