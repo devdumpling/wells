@@ -2,30 +2,27 @@
   "name": "wells",
   "version": "0.0.1",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "docs/*",
-    "packages/*"
-  ],
   "scripts": {
     "build": "turbo run build",
+    "build:web": "turbo run build --filter=web",
+    "build:docs": "turbo run build --filter=wells",
+    "build:blog": "turbo run build --filter=blog",
     "changeset": "changeset",
     "clean": "turbo run clean && rimraf node_modules",
+    "clean:deep": "turbo run clean && pnpm install",
     "dev": "turbo run dev --parallel",
-    "dev:main": "turbo run dev --filter=main",
+    "dev:web": "turbo run dev --filter=web",
     "dev:docs": "turbo run dev --filter=wells",
     "dev:blog": "turbo run dev --filter=blog",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
-    "lint:fix": "turbo run lint:fix",            
-    "release": "turbo run build --filter=docs^... && changeset publish",
-    "reset": "pnpm clean && pnpm install",
-    "version-packages": "changeset version"
+    "lint:fix": "turbo run lint:fix",
+    "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.24.4",
     "eslint-config-custom": "workspace:*",
-    "eslint": "^7.32.0",
+    "eslint": "8.36.0",
     "prettier": "latest",
     "rimraf": "^3.0.2",
     "turbo": "latest"
@@ -34,15 +31,15 @@
     "overrides": {
       "@types/react": "^18.0.27",
       "@types/react-dom": "^18.0.10",
-      "eslint": "^7.32.0",
+      "eslint": "8.36.0",
       "react": "^18.2.0",
       "react-dom": "^18.2.0",
       "next": "^13.2.0"
     }
   },
   "engines": {
-    "node": ">=14.0.0",
-    "pnpm": ">=7.0.0"
+    "node": ">=16.8.0",
+    "pnpm": ">=7.15.0"
   },
-  "packageManager": "pnpm@7.25.1"
+  "packageManager": "pnpm@7.29.3"
 }
