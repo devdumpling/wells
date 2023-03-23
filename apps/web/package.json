@@ -14,7 +14,8 @@
     "@next/mdx": "13.2.4",
     "next": "workspace:*",
     "react": "workspace:*",
-    "react-dom": "workspace:*"
+    "react-dom": "workspace:*",
+    "react-simple-typewriter": "^5.0.1"
   },
   "devDependencies": {
     "@types/mdx": "2.0.3",
