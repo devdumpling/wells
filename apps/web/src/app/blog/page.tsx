@@ -9,7 +9,7 @@ export default function BlogPage() {
       <ul>
         {posts.map(({ meta }) => (
           <li
-            className="hover:transition-all focus:transition-all ease-in-out duration-300 hover:text-violet-500"
+            className="hover:transition-all focus:transition-all ease-in-out duration-300 hover:underline focus:underline"
             key={meta.slug}
           >
             <Link href={`/blog/${meta.slug}`}>
