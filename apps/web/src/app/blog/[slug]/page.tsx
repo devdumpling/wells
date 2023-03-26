@@ -1,14 +1,4 @@
-import { posts } from "@/content";
-
-function getPost(slug: string) {
-  const post = posts.find((post) => post.meta.slug === slug);
-
-  if (!post) {
-    throw new Error(`Post not found: ${slug}`);
-  }
-
-  return post;
-}
+import { getPost, getPosts } from "@/utils";
 
 export default function Page({ params }: { params: { slug: string } }) {
   const post = getPost(params.slug);
@@ -16,13 +6,14 @@ export default function Page({ params }: { params: { slug: string } }) {
 
   return (
     <section>
-      <h1 className="text-5xl font-bold my-8">{meta.title}</h1>
+      <h1 className="text-5xl font-bold my-8">{meta.title}</h1>      
       <Content />
     </section>
   );
 }
 
 export async function generateStaticParams() {
+  const posts = getPosts();
   return posts.map(({ meta }) => ({
     slug: meta.slug,
   }));
