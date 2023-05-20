@@ -1,6 +1,7 @@
 {
   "name": "wells",
   "version": "0.0.1",
+  "description": "Dev Wells monorepo",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -34,12 +35,11 @@
       "eslint": "8.36.0",
       "react": "^18.2.0",
       "react-dom": "^18.2.0",
-      "next": "^13.2.0"
+      "next": "^13.4.0"
     }
   },
   "engines": {
     "node": ">=16.8.0",
-    "pnpm": ">=7.15.0"
-  },
-  "packageManager": "pnpm@7.29.3"
+    "pnpm": ">=8.5.0"
+  }
 }

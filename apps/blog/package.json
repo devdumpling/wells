@@ -19,15 +19,15 @@
   "license": "ISC",
   "dependencies": {
     "next": "workspace:*",
-    "nextra": "2.2.17",
-    "nextra-theme-blog": "2.2.17",
+    "nextra": "2.5.2",
+    "nextra-theme-blog": "2.5.2",
     "react": "workspace:*",
     "react-dom": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "workspace:*",
     "@types/node": "^18.7.8",
-    "typescript": "^4.9.4",
+    "typescript": "^5.0.4",
     "eslint": "8.36.0",
     "tsconfig": "workspace:*",
     "eslint-config-custom": "workspace:*"
