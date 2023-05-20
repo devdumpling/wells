@@ -14,15 +14,15 @@
   "author": "devdumpling",
   "dependencies": {
     "next": "workspace:*",
-    "nextra": "2.2.19",
-    "nextra-theme-docs": "2.2.19",
+    "nextra": "2.5.2",
+    "nextra-theme-docs": "2.5.2",
     "react": "workspace:*",
     "react-dom": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "workspace:*",
     "@types/node": "^18.11.18",
-    "typescript": "5.0.2",
+    "typescript": "^5.0.4",
     "eslint": "8.36.0",
     "tsconfig": "workspace:*",
     "eslint-config-custom": "workspace:*"
