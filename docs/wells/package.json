@@ -13,18 +13,18 @@
   },
   "author": "devdumpling",
   "dependencies": {
-    "next": "workspace:*",
+    "next": "^13.4.4",
     "nextra": "2.5.2",
     "nextra-theme-docs": "2.5.2",
-    "react": "workspace:*",
-    "react-dom": "workspace:*"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "workspace:*",
-    "@types/node": "^18.11.18",
-    "typescript": "^5.0.4",
+    "@types/node": "^18.16.17",
+    "@types/react": "^18.2.10",
     "eslint": "8.36.0",
+    "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
-    "eslint-config-custom": "workspace:*"
+    "typescript": "^5.1.3"
   }
 }

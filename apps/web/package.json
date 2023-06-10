@@ -12,22 +12,22 @@
     "lint:fix": "next lint --fix"
   },
   "dependencies": {
-    "@next/mdx": "13.4.3",
-    "next": "workspace:*",
-    "react": "workspace:*",
-    "react-dom": "workspace:*"
+    "@next/mdx": "^13.4.4",
+    "next": "^13.4.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/mdx": "2.0.3",
     "@types/node": "18.15.3",
-    "@types/react": "workspace:*",
-    "@types/react-dom": "workspace:*",
-    "autoprefixer": "^10.4.13",
-    "eslint": "workspace:*",
+    "@types/react": "^18.2.10",
+    "@types/react-dom": "^18.2.4",
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.36.0",
     "eslint-config-custom": "workspace:*",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2",
     "tsconfig": "workspace:*",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.3"
   }
 }
