@@ -6,24 +6,22 @@
   "scripts": {
     "build": "turbo run build",
     "build:web": "turbo run build --filter=web",
-    "build:docs": "turbo run build --filter=wells",
-    "build:blog": "turbo run build --filter=blog",
+    "build:docs": "turbo run build --filter=wells",    
     "changeset": "changeset",
     "clean": "turbo run clean && rimraf node_modules",
     "clean:deep": "turbo run clean && pnpm install",
     "dev": "turbo run dev --parallel",
     "dev:web": "turbo run dev --filter=web",
-    "dev:docs": "turbo run dev --filter=wells",
-    "dev:blog": "turbo run dev --filter=blog",
+    "dev:docs": "turbo run dev --filter=wells",    
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.24.4",
-    "eslint-config-custom": "workspace:*",
+    "@changesets/cli": "^2.26.1",
     "eslint": "8.36.0",
+    "eslint-config-custom": "workspace:*",
     "prettier": "latest",
     "rimraf": "^3.0.2",
     "turbo": "latest"
@@ -34,12 +32,11 @@
       "@types/react-dom": "^18.0.10",
       "eslint": "8.36.0",
       "react": "^18.2.0",
-      "react-dom": "^18.2.0",
-      "next": "^13.4.0"
+      "react-dom": "^18.2.0"
     }
   },
   "engines": {
     "node": ">=16.8.0",
-    "pnpm": ">=8.5.0"
+    "pnpm": ">=8.6.0"
   }
 }

@@ -10,18 +10,19 @@ const Logo = (
   </>
 );
 
-const TitleSuffix = () => {
-  const { route } = useRouter();
-  if (route === "/") return "";
-  return " – Nextra";
-};
-
 export default {
   project: { link: "https://github.com/devdumpling/wells" },
   docsRepositoryBase:
     "https://github.com/devdumpling/wells/tree/main/docs/wells",
   logo: Logo,
-  titleSuffix: TitleSuffix,
+  useNextSeoProps: () => {
+    const { asPath } = useRouter();
+    if (asPath !== "/") {
+      return {
+        titleTemplate: "%s – SWR",
+      };
+    }
+  },
   head: () => (
     <>
       <meta name="msapplication-TileColor" content="#ffffff" />
@@ -75,8 +76,7 @@ export default {
     float: true,
   },
   sidebar: {
-    defaultMenuCollapsed: true,
-    subtitle: ({ title }: { title: string }) => <>{title}</>,
+    toggleButton: true,
   },
   footer: {
     text: "© 2021 Dev Wells",
