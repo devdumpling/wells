@@ -11,6 +11,7 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix"
   },
+  "browserslist": "defaults, not ie <= 11",
   "dependencies": {
     "@next/mdx": "^13.4.4",
     "next": "^13.4.4",
