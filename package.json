@@ -5,14 +5,14 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "build:web": "turbo run build --filter=web",
-    "build:docs": "turbo run build --filter=wells",    
+    "build:web": "turbo run build --filter=wells.web",
+    "build:docs": "turbo run build --filter=wells.docs",    
     "changeset": "changeset",
     "clean": "turbo run clean && rimraf node_modules",
     "clean:deep": "turbo run clean && pnpm install",
     "dev": "turbo run dev --parallel",
-    "dev:web": "turbo run dev --filter=web",
-    "dev:docs": "turbo run dev --filter=wells",    
+    "dev:web": "turbo run dev --filter=wells.web",
+    "dev:docs": "turbo run dev --filter=wells.docs",    
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
@@ -37,6 +37,6 @@
   },
   "engines": {
     "node": ">=16.8.0",
-    "pnpm": ">=8.6.0"
+    "pnpm": ">=8.6.5"
   }
 }

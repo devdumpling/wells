@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "wells.web",
   "version": "0.3.0",
   "description": "Wells core web app",
   "private": true,
@@ -11,9 +11,10 @@
     "lint": "next lint",
     "lint:fix": "next lint --fix"
   },
+  "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "@next/mdx": "^13.4.4",
-    "next": "^13.4.4",
+    "@next/mdx": "^13.4.7",
+    "next": "^13.4.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
