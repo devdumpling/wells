@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "wells.web",
   "version": "0.3.0",
   "description": "Wells core web app",
   "private": true,
