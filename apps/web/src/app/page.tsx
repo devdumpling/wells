@@ -5,11 +5,9 @@ const alegreya = Alegreya({ subsets: ["latin"] });
 
 export default function HomePage() {
   return (
-    <div className={`${styles.container} ${alegreya.className}`}>
-      <h1 className={`${styles.title}`}>Devon Wells</h1>
-      <p className={styles.intro}>
-        Software Engineer | Dad | Plant Enthusiast
-      </p>    
+    <div className={alegreya.className}>
+      <h1>Devon Wells</h1>
+      <p>Software Engineer | Dad | Plant Enthusiast</p>
     </div>
   );
 }
