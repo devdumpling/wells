@@ -1,11 +1,14 @@
 import { Hero } from "@/components/Hero";
-import { BlogSection } from "@/components/BlogSection";
+import { RecentPosts } from "@/components/RecentPosts";
 
 export default function HomePage() {
   return (
     <div>
-      <Hero title="DEV WELLS" subtitle="i press buttons the best" />
-      <BlogSection />
+      <Hero
+        title="Dev Wells"
+        subtitle="Something of a button presser myself."
+      />
+      <RecentPosts />
     </div>
   );
 }

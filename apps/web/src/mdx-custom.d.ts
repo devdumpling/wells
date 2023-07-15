@@ -4,5 +4,6 @@ declare module "*.mdx" {
     slug: string;
     description?: string;
     date?: string;
+    hero_img_url?: string;
   };
 }
