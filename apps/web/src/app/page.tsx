@@ -1,13 +1,11 @@
-import styles from "./HomePage.module.css";
-import { Alegreya } from "next/font/google";
-
-const alegreya = Alegreya({ subsets: ["latin"] });
+import { Hero } from "@/components/Hero";
+import { BlogSection } from "@/components/BlogSection";
 
 export default function HomePage() {
   return (
-    <div className={alegreya.className}>
-      <h1>Devon Wells</h1>
-      <p>Software Engineer | Dad | Plant Enthusiast</p>
+    <div>
+      <Hero title="DEV WELLS" subtitle="i press buttons the best" />
+      <BlogSection />
     </div>
   );
 }
