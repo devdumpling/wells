@@ -1,4 +1,7 @@
 {
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
   "typescript.tsdk": "../../node_modules/.pnpm/typescript@5.0.2/node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true
 }

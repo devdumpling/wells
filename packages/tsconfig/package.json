@@ -12,6 +12,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "eslint-config-next": "^13.4.7"
+    "eslint-config-next": "^13.4.10"
   }
 }
