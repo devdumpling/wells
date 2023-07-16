@@ -1,13 +1,11 @@
 import { posts } from "@/content";
 
 export function RecentPosts() {
-  // Get the three most recent posts
   const recentPosts = posts.slice(0, 3);
 
   return (
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <h2 className="text-2xl font-semibold text-gray-900">Words</h2>
-      <div className="grid gap-16 pt-12 mt-6 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
+      <div className="grid gap-16 pt-3 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
         {recentPosts.map((post) => (
           <div key={post.meta.slug}>
             {post.meta.hero_img_url && (
@@ -23,7 +21,9 @@ export function RecentPosts() {
               <h3 className="mt-2 text-xl font-semibold leading-7 text-gray-900">
                 {post.meta.title}
               </h3>
-              <p className="mt-3 text-base text-gray-500">{post.meta.description}</p>
+              <p className="mt-3 text-base text-gray-500">
+                {post.meta.description}
+              </p>
               <div className="mt-3">
                 <a
                   href={`/blog/${post.meta.slug}`}
