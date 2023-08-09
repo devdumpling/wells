@@ -24,7 +24,7 @@
   "devDependencies": {
     "@types/mdx": "2.0.3",
     "@types/node": "18.15.3",
-    "@types/react": "^18.2.15",
+    "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.14",
     "eslint": "8.36.0",
