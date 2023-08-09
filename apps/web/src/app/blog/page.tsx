@@ -1,21 +1,23 @@
-import { getPosts } from "@/utils";
+import { getPosts } from "@/lib/posts";
 import Link from "next/link";
 
-export default function BlogPage() {
-  const posts = getPosts();
+export default async function BlogPage() {
+  const posts = await getPosts();
+
+  console.log(posts);
   return (
     <section>
-      <h1 className="text-4xl font-bold my-8">Posts</h1>
-      <hr className="border-slate-500 border-t-2" />
-      <ul>
+      <h1 className="my-8 text-4xl font-bold">Posts</h1>
+      <hr className="border-t-2 border-slate-500" />
+      {/* <ul>
         {posts.map(({ meta }) => (
           <li
-            className="hover:transition-all focus:transition-all ease-in-out duration-300 hover:underline focus:underline mt-8"
+            className="mt-8 duration-300 ease-in-out hover:transition-all focus:transition-all hover:underline focus:underline"
             key={meta.slug}
           >
             <Link href={`/blog/${meta.slug}`}>
               <div>
-                <h2 className="text-2xl font-bold my-4">{meta.title}</h2>
+                <h2 className="my-4 text-2xl font-bold">{meta.title}</h2>
                 {meta?.description && (
                   <p className="my-2">{meta.description}</p>
                 )}
@@ -24,7 +26,7 @@ export default function BlogPage() {
             </Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </section>
   );
 }
