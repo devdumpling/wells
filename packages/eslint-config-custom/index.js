@@ -1,11 +1,5 @@
 module.exports = {
-  extends: [
-    "next",
-    "turbo",
-    "prettier",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-  ],
+  extends: ["next", "turbo", "prettier", "plugin:react/recommended"],
   rules: {
     "@next/next/no-html-link-for-pages": "off",
     "react/jsx-key": "off",
