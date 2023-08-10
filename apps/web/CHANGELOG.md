@@ -1,5 +1,12 @@
 # web
 
+## 0.4.0
+
+### Minor Changes
+
+- 22acf5f: Renames docs and web to include wells prefix
+- 3ad76d6: CMSify
+
 ## 0.3.0
 
 ### Minor Changes

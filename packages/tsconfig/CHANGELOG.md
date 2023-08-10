@@ -1,5 +1,11 @@
 # tsconfig
 
+## 0.2.0
+
+### Minor Changes
+
+- 22acf5f: Renames docs and web to include wells prefix
+
 ## 0.1.0
 
 ### Minor Changes
