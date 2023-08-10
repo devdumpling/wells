@@ -1,5 +1,6 @@
 import { getPost, getPosts } from "@/lib/posts";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import type { Metadata } from "next";
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const post = await getPost(params.slug);
@@ -31,7 +32,7 @@ export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
-}) {
+}): Promise<Metadata> {
   const post = await getPost(params.slug);
   const { frontmatter } = post;
 

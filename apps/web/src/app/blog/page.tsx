@@ -4,7 +4,6 @@ import Link from "next/link";
 export default async function BlogPage() {
   const posts = await getPosts();
 
-  console.log(posts);
   return (
     <section>
       <h1 className="my-8 text-4xl font-bold">Posts</h1>
@@ -21,7 +20,9 @@ export default async function BlogPage() {
                 {frontmatter?.description && (
                   <p className="my-2">{frontmatter.description}</p>
                 )}
-                {frontmatter?.date && <p className="text-gray-500">{frontmatter.date}</p>}
+                {frontmatter?.date && (
+                  <p className="text-gray-500">{frontmatter.date}</p>
+                )}
               </div>
             </Link>
           </li>

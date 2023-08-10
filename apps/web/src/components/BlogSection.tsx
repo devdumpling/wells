@@ -1,6 +1,6 @@
-import { posts } from "@/content";
+import { Post } from "@/app/api/posts/types";
 
-export function BlogSection() {
+export function BlogSection({ posts }: { posts: Post[] }) {
   return (
     <div className="py-4 bg-white sm:py-8">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
@@ -13,7 +13,7 @@ export function BlogSection() {
         <div className="grid max-w-2xl grid-cols-1 gap-8 mx-auto mt-16 auto-rows-fr sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <article
-              key={post.meta.slug}
+              key={post.frontmatter.slug}
               className="relative flex flex-col justify-end px-8 pb-8 overflow-hidden bg-gray-900 isolate rounded-2xl pt-80 sm:pt-48 lg:pt-80"
             >
               <img
@@ -25,8 +25,8 @@ export function BlogSection() {
               <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
               <div className="flex flex-wrap items-center overflow-hidden text-sm leading-6 text-gray-300 gap-y-1">
-                <time dateTime={post.meta.date} className="mr-8">
-                  {post.meta.date}
+                <time dateTime={post.frontmatter.date} className="mr-8">
+                  {post.frontmatter.date}
                 </time>
                 <div className="flex items-center -ml-4 gap-x-4">
                   <svg
@@ -46,9 +46,9 @@ export function BlogSection() {
                 </div>
               </div>
               <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                <a href={`/blog/${post.meta.slug}`}>
+                <a href={`/blog/${post.frontmatter.slug}`}>
                   <span className="absolute inset-0" />
-                  {post.meta.title}
+                  {post.frontmatter.title}
                 </a>
               </h3>
             </article>
