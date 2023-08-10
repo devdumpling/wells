@@ -12,8 +12,6 @@ export async function GET(): Promise<NextResponse> {
     path: "blog/content",
   });
 
-  console.log(data);
-
   const posts: Post[] = await Promise.all(
     data.map(async (post: any) => {
       const { data: content }: any = await octokit.request(post.url);
@@ -26,8 +24,6 @@ export async function GET(): Promise<NextResponse> {
       };
     })
   );
-
-  console.log(posts);
 
   return NextResponse.json(posts);
 }

@@ -1,21 +1,56 @@
+import { Octokit } from "octokit";
+import matter from "gray-matter";
+
 import type { Post } from "@/app/api/posts/types";
 
 export async function getPosts(): Promise<Post[]> {
-  const res = await fetch(`${process.env.BASE_URL}/api/posts`);
+  const octokit: Octokit = new Octokit();
+  const { data }: any = await octokit.rest.repos.getContent({
+    owner: "devdumpling",
+    repo: "writing",
+    path: "blog/content",
+  });
 
-  if (!res.ok) {
+  if (!data) {
     throw new Error("Failed to fetch posts");
   }
 
-  return res.json();
+  const posts: Post[] = await Promise.all(
+    data.map(async (post: any) => {
+      const { data: content }: any = await octokit.request(post.url);
+      const { data: file }: any = await octokit.request(content.download_url);
+      const { data: frontmatter, content: markdownContent }: any = matter(file);
+
+      return {
+        frontmatter,
+        markdownContent,
+      };
+    })
+  );
+
+  return posts;
 }
 
 export async function getPost(slug: string): Promise<Post> {
-  const res = await fetch(`${process.env.BASE_URL}/api/posts/${slug}`);
+  const octokit: Octokit = new Octokit();
+  const { data }: any = await octokit.rest.repos.getContent({
+    owner: "devdumpling",
+    repo: "writing",
+    path: `blog/content/${slug}.md`,
+  });
 
-  if (!res.ok) {
+  if (!data) {
     throw new Error("Failed to fetch post");
   }
 
-  return res.json();
+  const { data: content }: any = await octokit.request(data.url);
+  const { data: file }: any = await octokit.request(content.download_url);
+  const { data: frontmatter, content: markdownContent }: any = matter(file);
+
+  const post: Post = {
+    frontmatter,
+    markdownContent,
+  };
+
+  return post;
 }
