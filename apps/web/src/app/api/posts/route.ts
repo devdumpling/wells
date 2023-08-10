@@ -12,13 +12,14 @@ export async function GET(): Promise<NextResponse> {
     path: "blog/content",
   });
 
+  console.log(data);
+
   const posts: Post[] = await Promise.all(
     data.map(async (post: any) => {
       const { data: content }: any = await octokit.request(post.url);
       const { data: file }: any = await octokit.request(content.download_url);
       const { data: frontmatter, content: markdownContent }: any = matter(file);
 
-      console.log(frontmatter);
       return {
         frontmatter,
         markdownContent,

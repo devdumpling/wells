@@ -9,24 +9,24 @@ export default async function BlogPage() {
     <section>
       <h1 className="my-8 text-4xl font-bold">Posts</h1>
       <hr className="border-t-2 border-slate-500" />
-      {/* <ul>
-        {posts.map(({ meta }) => (
+      <ul>
+        {posts.map(({ frontmatter }) => (
           <li
             className="mt-8 duration-300 ease-in-out hover:transition-all focus:transition-all hover:underline focus:underline"
-            key={meta.slug}
+            key={frontmatter.slug}
           >
-            <Link href={`/blog/${meta.slug}`}>
+            <Link href={`/blog/${frontmatter.slug}`}>
               <div>
-                <h2 className="my-4 text-2xl font-bold">{meta.title}</h2>
-                {meta?.description && (
-                  <p className="my-2">{meta.description}</p>
+                <h2 className="my-4 text-2xl font-bold">{frontmatter.title}</h2>
+                {frontmatter?.description && (
+                  <p className="my-2">{frontmatter.description}</p>
                 )}
-                {meta?.date && <p className="text-gray-500">{meta.date}</p>}
+                {frontmatter?.date && <p className="text-gray-500">{frontmatter.date}</p>}
               </div>
             </Link>
           </li>
         ))}
-      </ul> */}
+      </ul>
     </section>
   );
 }

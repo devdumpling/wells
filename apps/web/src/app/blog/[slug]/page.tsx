@@ -1,32 +1,35 @@
-export default function Page({ params }: { params: { slug: string } }) {
-  // const post = getPost(params.slug);
-  // const { meta, default: Content } = post;
+import { getPost, getPosts } from "@/lib/posts";
+import { MDXRemote } from "next-mdx-remote/rsc";
+
+export default async function Page({ params }: { params: { slug: string } }) {
+  const post = await getPost(params.slug);
+  const { frontmatter, markdownContent } = post;
 
   return (
     <section>
-      {/* <h1 className="my-8 text-4xl font-bold">{meta.title}</h1>       */}
-      {/* <Content /> */}
+      <h1 className="my-8 text-4xl font-bold">{frontmatter.title}</h1>
+      <MDXRemote source={markdownContent} />
     </section>
   );
 }
 
-// export async function generateStaticParams() {
-//   const posts = getPosts();
-//   return posts.map(({ meta }) => ({
-//     slug: meta.slug,
-//   }));
-// }
+export async function generateStaticParams() {
+  const posts = await getPosts();
+  return posts.map(({ frontmatter }) => ({
+    slug: frontmatter.slug,
+  }));
+}
 
-// export async function generateMetadata({
-//   params,
-// }: {
-//   params: { slug: string };
-// }) {
-//   const post = getPost(params.slug);
-//   const { meta } = post;
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
+  const post = await getPost(params.slug);
+  const { frontmatter } = post;
 
-//   return {
-//     title: meta.title,
-//     description: meta.description,
-//   };
-// }
+  return {
+    title: frontmatter.title,
+    description: frontmatter.description,
+  };
+}
