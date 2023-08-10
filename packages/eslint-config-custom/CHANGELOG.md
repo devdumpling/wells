@@ -1,5 +1,15 @@
 # eslint-config-custom
 
+## 0.2.0
+
+### Minor Changes
+
+- 22acf5f: Renames docs and web to include wells prefix
+
+### Patch Changes
+
+- fdbdfd1: Removes a duplicate entry to react-hooks
+
 ## 0.1.0
 
 ### Minor Changes
