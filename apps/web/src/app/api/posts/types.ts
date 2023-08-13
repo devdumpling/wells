@@ -3,6 +3,7 @@ export interface FrontMatter {
   description: string;
   date: string;
   slug: string;
+  imgAboveFold?: string;
 }
 
 export interface Post {
