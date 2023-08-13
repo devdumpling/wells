@@ -1,5 +1,11 @@
 # web
 
+## 0.5.1
+
+### Patch Changes
+
+- b3d1b5f: Adds priority to images above the fold in blog
+
 ## 0.5.0
 
 ### Minor Changes
