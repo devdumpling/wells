@@ -16,15 +16,15 @@ export default async function Page({ params }: { params: { slug: string } }) {
     p: (props: any) => <p className="my-4" {...props} />,
     img: (props: any) => {
       let src = props.src as string;
-      console.log(props);
+      const isImageAboveTheFold = props.alt === frontmatter.imgAboveFold;
 
-      // prepend src with domain
       if (src.startsWith("/")) {
         src = `${process.env.NEXT_PUBLIC_DOMAIN}${props.src}`;
       }
 
       return (
         <Image
+          priority={isImageAboveTheFold}
           width={768}
           height={512}
           alt={props.alt ? props.alt : "Unknown image"}
