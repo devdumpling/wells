@@ -1,5 +1,11 @@
 # web
 
+## 0.5.0
+
+### Minor Changes
+
+- 4bf0ba9: Fixes images so that they fetch correctly and use next image from github user content
+
 ## 0.4.0
 
 ### Minor Changes
