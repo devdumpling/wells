@@ -2,7 +2,7 @@
   "extends": ["//"],
   "pipeline": {
     "build": {
-      "env": ["DOCS_URL"],
+      "env": ["DOCS_URL", "NEXT_PUBLIC_DOMAIN"],
       "outputs": [".next/**"]
     }
   }

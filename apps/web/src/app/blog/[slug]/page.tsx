@@ -1,6 +1,9 @@
 import { getPost, getPosts } from "@/lib/posts";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import Image from "next/image";
 import type { Metadata } from "next";
+
+// export const revalidate = 0;
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const post = await getPost(params.slug);
@@ -11,6 +14,24 @@ export default async function Page({ params }: { params: { slug: string } }) {
     h2: (props: any) => <h2 className="my-4 text-2xl font-bold" {...props} />,
     h3: (props: any) => <h3 className="my-4 text-xl font-bold" {...props} />,
     p: (props: any) => <p className="my-4" {...props} />,
+    img: (props: any) => {
+      let src = props.src as string;
+      console.log(props);
+
+      // prepend src with domain
+      if (src.startsWith("/")) {
+        src = `${process.env.NEXT_PUBLIC_DOMAIN}${props.src}`;
+      }
+
+      return (
+        <Image
+          width={768}
+          height={512}
+          alt={props.alt ? props.alt : "Unknown image"}
+          src={src}
+        />
+      );
+    },
   };
 
   return (
