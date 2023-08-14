@@ -3,7 +3,9 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import Image from "next/image";
 import type { Metadata } from "next";
 
-// export const revalidate = 0;
+// Rebuilds the page every 10 hours
+// https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#revalidate
+export const revalidate = 36000;
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const post = await getPost(params.slug);
