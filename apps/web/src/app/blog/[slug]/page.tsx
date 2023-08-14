@@ -19,6 +19,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
     img: (props: any) => {
       let src = props.src as string;
       const isImageAboveTheFold = props.alt === frontmatter.imgAboveFold;
+      console.log("isImageAboveTheFold", isImageAboveTheFold);
+      console.log(props);
 
       if (src.startsWith("/")) {
         src = `${process.env.NEXT_PUBLIC_DOMAIN}${props.src}`;
@@ -29,7 +31,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
           priority={isImageAboveTheFold}
           width={768}
           height={512}
-          alt={props.alt ? props.alt : "Unknown image"}
+          alt={props.alt ? props.alt : ""}
           src={src}
         />
       );
