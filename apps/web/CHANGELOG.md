@@ -1,5 +1,12 @@
 # web
 
+## 0.5.2
+
+### Patch Changes
+
+- c416638: fixes empty alt
+- a3ca632: Adds a 10 hour revalidation to the blog wildcard routes
+
 ## 0.5.1
 
 ### Patch Changes
