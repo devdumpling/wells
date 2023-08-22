@@ -1,5 +1,4 @@
 import { Post } from "@/app/api/posts/types";
-import Image from "next/image";
 
 const NUM_POSTS_TO_SHOW = 3;
 
