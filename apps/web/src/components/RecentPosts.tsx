@@ -1,7 +1,19 @@
 import { Post } from "@/app/api/posts/types";
+import Image from "next/image";
+
+const NUM_POSTS_TO_SHOW = 3;
+
+const sortPosts = (posts: Post[]) => {
+  return posts.sort((a, b) => {
+    return (
+      new Date(b.frontmatter.date).getTime() -
+      new Date(a.frontmatter.date).getTime()
+    );
+  });
+};
 
 export function RecentPosts({ posts }: { posts: Post[] }) {
-  const recentPosts = posts.slice(0, 3);
+  const recentPosts = sortPosts(posts).slice(0, NUM_POSTS_TO_SHOW);
 
   return (
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
