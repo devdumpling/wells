@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Post } from "@/app/api/posts/types";
 
 const NUM_POSTS_TO_SHOW = 3;
@@ -19,22 +20,14 @@ export function RecentPosts({ posts }: { posts: Post[] }) {
       <div className="grid gap-16 pt-3 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">
         {recentPosts.map((post) => (
           <div key={post.frontmatter.slug}>
-            <div>
+            <Link href={`/blog/${post.frontmatter.slug}`}>
               <h3 className="mt-2 text-xl font-semibold leading-7 text-gray-900">
                 {post.frontmatter.title}
               </h3>
               <p className="mt-3 text-base text-gray-500">
                 {post.frontmatter.description}
               </p>
-              <div className="mt-3">
-                <a
-                  href={`/blog/${post.frontmatter.slug}`}
-                  className="text-base font-semibold text-indigo-600 hover:text-indigo-500"
-                >
-                  Read full post
-                </a>
-              </div>
-            </div>
+            </Link>
           </div>
         ))}
       </div>

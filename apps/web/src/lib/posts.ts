@@ -3,6 +3,10 @@ import matter from "gray-matter";
 
 import type { Post } from "@/app/api/posts/types";
 
+// Rebuilds the page every 10 hours
+// https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#revalidate
+export const revalidate = 36000;
+
 export async function getPosts(): Promise<Post[]> {
   const octokit: Octokit = new Octokit();
   const { data }: any = await octokit.rest.repos.getContent({
