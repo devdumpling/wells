@@ -1,4 +1,5 @@
 import { Post } from "@/app/api/posts/types";
+import Image from "next/image";
 
 export function BlogSection({ posts }: { posts: Post[] }) {
   return (
@@ -16,7 +17,7 @@ export function BlogSection({ posts }: { posts: Post[] }) {
               key={post.frontmatter.slug}
               className="relative flex flex-col justify-end px-8 pb-8 overflow-hidden bg-gray-900 isolate rounded-2xl pt-80 sm:pt-48 lg:pt-80"
             >
-              <img
+              <Image
                 src=""
                 alt=""
                 className="absolute inset-0 object-cover w-full h-full -z-10"
@@ -36,7 +37,7 @@ export function BlogSection({ posts }: { posts: Post[] }) {
                     <circle cx={1} cy={1} r={1} />
                   </svg>
                   <div className="flex gap-x-2.5">
-                    <img
+                    <Image
                       src=""
                       alt=""
                       className="flex-none w-6 h-6 rounded-full bg-white/10"
