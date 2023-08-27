@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Post } from "@/app/api/posts/types";
 
-const NUM_POSTS_TO_SHOW = 3;
+const NUM_POSTS_TO_SHOW = 6;
 
 const sortPosts = (posts: Post[]) => {
   return posts.sort((a, b) => {
