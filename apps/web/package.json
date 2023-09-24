@@ -13,11 +13,11 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "@next/mdx": "^13.4.12",
+    "@next/mdx": "^13.5.2",
     "next-mdx-remote": "^4.4.1",
     "cva": "npm:class-variance-authority@^0.6.1",
     "octokit": "^3.1.0",
-    "next": "^13.4.12",
+    "next": "^13.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "gray-matter": "^4.0.3"
