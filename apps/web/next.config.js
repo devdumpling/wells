@@ -2,19 +2,6 @@ const { DOCS_URL } = process.env;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**.githubusercontent.com",
-        port: "",
-        pathname: "/devdumpling/writing/**",
-      },
-    ],
-  },
-  experimental: {
-    mdxRs: true,
-  },
   async rewrites() {
     return [
       {
@@ -29,6 +16,4 @@ const nextConfig = {
   },
 };
 
-const withMDX = require("@next/mdx")();
-
-module.exports = withMDX(nextConfig);
+module.exports = nextConfig;

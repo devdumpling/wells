@@ -4,7 +4,7 @@
   "private": true,
   "description": "Docs site for Wells monorepo",
   "scripts": {
-    "clean": "rimraf .next && rimraf node_modules",
+    "clean": "rm -rf .next && rm -rf node_modules",
     "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
@@ -13,18 +13,17 @@
   },
   "author": "devdumpling",
   "dependencies": {
-    "next": "^13.5.2",
-    "nextra": "^2.13.0",
-    "nextra-theme-docs": "^2.13.0",
+    "next": "^13.5.4",
+    "nextra": "^2.13.2",
+    "nextra-theme-docs": "^2.13.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^18.16.19",
-    "@types/react": "^18.2.15",
-    "eslint": "8.36.0",
+    "@types/react": "^18.2.25",
+    "eslint": "^8.51.0",
     "eslint-config-custom": "workspace:*",
     "tsconfig": "workspace:*",
-    "typescript": "^5.1.6"
+    "typescript": "^5.2.2"
   }
 }
