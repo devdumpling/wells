@@ -8,10 +8,10 @@
     "react-library.json"
   ],
   "scripts": {
-    "clean": "rimraf node_modules",
+    "clean": "rm -rf node_modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "eslint-config-next": "^13.5.2"
+    "eslint-config-next": "^13.5.4"
   }
 }

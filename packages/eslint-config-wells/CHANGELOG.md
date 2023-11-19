@@ -1,4 +1,4 @@
-# eslint-config-custom
+# eslint-config-wells
 
 ## 0.2.0
 

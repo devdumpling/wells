@@ -1,4 +1,3 @@
 {
-  "eslint.packageManager": "pnpm",
-  "eslint.workingDirectories": ["packages/**/*", "docs/**/*", "apps/**/*"]
+  "eslint.workingDirectories": ["packages/**/*", "apps/**/*"]
 }
