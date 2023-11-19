@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 
 const Logo = (
   <>
-    <span className="mr-2 font-extrabold hidden md:inline">Wells</span>
-    <span className="text-gray-600 font-normal hidden md:inline">
+    <span className="hidden mr-2 font-extrabold md:inline">Wells</span>
+    <span className="hidden font-normal text-gray-600 md:inline">
       Dev&apos;s personal monorepo
     </span>
   </>
@@ -13,7 +13,7 @@ const Logo = (
 export default {
   project: { link: "https://github.com/devdumpling/wells" },
   docsRepositoryBase:
-    "https://github.com/devdumpling/wells/tree/main/docs/wells",
+    "https://github.com/devdumpling/wells/tree/main/apps/docs",
   logo: Logo,
   useNextSeoProps: () => {
     const { asPath } = useRouter();
