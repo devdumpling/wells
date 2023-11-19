@@ -1,22 +1,28 @@
 {
   "name": "wells.web",
   "version": "0.5.4",
-  "description": "Wells core web app",
   "private": true,
+  "description": "Wells core web app",
   "scripts": {
-    "dev": "next dev",
-    "clean": "rm -rf .next && rm -rf node_modules",
     "build": "next build",
-    "start": "next start",
+    "clean": "rm -rf .next && rm -rf node_modules",
+    "dev": "next dev",
     "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "lint:fix": "next lint --fix",
+    "start": "next start"
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
     "cva": "npm:class-variance-authority@^0.7.0",
+    "lucide-react": "^0.292.0",
     "next": "^14.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",
