@@ -5,7 +5,7 @@ export default async function HomePage() {
     <div>
       <Hero
         title="Dev Wells"
-        subtitle="Something of a button presser myself."
+        subtitle="Currently going through a bit of refactor 🏗️"
       />
     </div>
   );

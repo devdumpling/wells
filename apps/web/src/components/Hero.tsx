@@ -14,7 +14,6 @@ export function Hero({ title, subtitle }: HeroProps) {
             {title}
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">{subtitle}</p>
-          <Button>Click Me</Button>
         </div>
       </div>
     </div>
