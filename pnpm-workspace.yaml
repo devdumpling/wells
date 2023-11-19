@@ -1,6 +1,4 @@
 packages:
   - "apps/*"
-  - "docs/*"
   - "packages/*"
   - "packages/components/*"
-  - "!packages/_deprecated/**/*"
