@@ -20,8 +20,8 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
-    "@types/node": "^20.8.3",
-    "eslint": "^8.51.0",
+    "@types/node": "^20.9.2",
+    "eslint": "^8.54.0",
     "eslint-config-wells": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"

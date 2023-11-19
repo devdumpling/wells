@@ -13,19 +13,19 @@
   },
   "browserslist": "defaults, not ie <= 11",
   "dependencies": {
-    "cva": "npm:class-variance-authority@^0.6.1",
-    "next": "^13.5.4",
+    "cva": "npm:class-variance-authority@^0.7.0",
+    "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.25",
-    "@types/react-dom": "^18.2.11",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
     "autoprefixer": "^10.4.16",
-    "eslint": "^8.51.0",
+    "eslint": "^8.54.0",
     "eslint-config-wells": "workspace:*",
     "postcss": "^8.4.31",
-    "tailwindcss": "^3.3.3",
+    "tailwindcss": "^3.3.5",
     "tsconfig": "workspace:*",
     "typescript": "^5.2.2"
   }
