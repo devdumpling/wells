@@ -1,3 +1,3 @@
-# Ye Olde Wells Docs
+# Ye Olde Wells Docs!
 
 https://wells-docs.vercel.app/
