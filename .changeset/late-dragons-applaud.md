@@ -1,5 +1,5 @@
 ---
-"eslint-config-custom": patch
+"eslint-config-wells": patch
 "tsconfig": patch
 "wells.docs": patch
 "wells.web": patch

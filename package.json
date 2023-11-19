@@ -22,7 +22,7 @@
     "@changesets/cli": "^2.26.2",
     "@types/node": "^20.8.3",
     "eslint": "^8.51.0",
-    "eslint-config-custom": "workspace:*",
+    "eslint-config-wells": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"
   },
@@ -37,6 +37,6 @@
   },
   "engines": {
     "node": ">=20",
-    "pnpm": ">=8.9.0"
+    "pnpm": ">=8.10.0"
   }
 }

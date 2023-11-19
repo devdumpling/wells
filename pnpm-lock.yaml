@@ -24,9 +24,9 @@ importers:
       eslint:
         specifier: ^8.51.0
         version: 8.51.0
-      eslint-config-custom:
+      eslint-config-wells:
         specifier: workspace:*
-        version: link:packages/eslint-config-custom
+        version: link:packages/eslint-config-wells
       prettier:
         specifier: latest
         version: 3.0.3
@@ -61,9 +61,9 @@ importers:
       eslint:
         specifier: ^8.51.0
         version: 8.51.0
-      eslint-config-custom:
+      eslint-config-wells:
         specifier: workspace:*
-        version: link:../../packages/eslint-config-custom
+        version: link:../../packages/eslint-config-wells
       postcss:
         specifier: ^8.4.31
         version: 8.4.31
@@ -101,9 +101,9 @@ importers:
       eslint:
         specifier: ^8.51.0
         version: 8.51.0
-      eslint-config-custom:
+      eslint-config-wells:
         specifier: workspace:*
-        version: link:../../packages/eslint-config-custom
+        version: link:../../packages/eslint-config-wells
       tsconfig:
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -111,7 +111,7 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
-  packages/eslint-config-custom:
+  packages/eslint-config-wells:
     dependencies:
       eslint:
         specifier: ^8.51.0

@@ -22,7 +22,7 @@
   "devDependencies": {
     "@types/react": "^18.2.25",
     "eslint": "^8.51.0",
-    "eslint-config-custom": "workspace:*",
+    "eslint-config-wells": "workspace:*",
     "tsconfig": "workspace:*",
     "typescript": "^5.2.2"
   }

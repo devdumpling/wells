@@ -1,5 +1,5 @@
 {
   "ui": "ui",
   "tsconfig": "tsconfig",
-  "eslint-config-custom": "eslint-config-custom"
+  "eslint-config-wells": "eslint-config-wells"
 }
