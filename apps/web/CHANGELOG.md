@@ -1,5 +1,19 @@
 # web
 
+## 0.6.0
+
+### Minor Changes
+
+- 7ce1052: A fresh start in many places
+- f35a3f4: init shadcn
+
+### Patch Changes
+
+- bb94c70: Adds refactor subtitle
+- 5dff39a: bump to next 13.5.2
+- 803f074: linkify blog
+- 8cf571e: dep bumps
+
 ## 0.5.4
 
 ### Patch Changes
