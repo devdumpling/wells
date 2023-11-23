@@ -1,5 +1,16 @@
 # tsconfig
 
+## 0.3.0
+
+### Minor Changes
+
+- 7ce1052: A fresh start in many places
+
+### Patch Changes
+
+- 5dff39a: bump to next 13.5.2
+- 8cf571e: dep bumps
+
 ## 0.2.0
 
 ### Minor Changes

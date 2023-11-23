@@ -1,5 +1,15 @@
 # wells
 
+## 0.3.0
+
+### Minor Changes
+
+- ddf81b5: Fix docs pathing
+
+### Patch Changes
+
+- 5dff39a: bump to next 13.5.2
+
 ## 0.2.0
 
 ### Minor Changes
