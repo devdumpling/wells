@@ -1,5 +1,3 @@
-import { Button } from "./ui/button";
-
 export interface HeroProps {
   title: string;
   subtitle: string;
