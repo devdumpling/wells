@@ -1,12 +1,19 @@
 import "../styles/globals.css";
-import { Inter } from "next/font/google";
+import { Inter, Pixelify_Sans } from "next/font/google";
 
 import { cn } from "@/lib/utils";
+import Header from "@/components/Header";
 
 const fontSans = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans",
+});
+
+const fontPixelify = Pixelify_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-pixelify",
 });
 
 export const metadata = {
@@ -24,10 +31,14 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-tertiary font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
+          fontPixelify.variable
         )}
       >
-        <main>{children}</main>
+        <main>
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   );

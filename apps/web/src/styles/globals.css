@@ -96,7 +96,7 @@
     right: 0;
 
     /* Box shadow for a vignette effect - adjust or remove as needed */
-    box-shadow: inset 0 0 25vw rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 25vw rgba(0, 0, 0, 0.4);
 
     /* Ensure the shadow does not interfere with user interaction */
     pointer-events: none;
