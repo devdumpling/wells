@@ -8,7 +8,6 @@ export default async function Character() {
           <Image
             src="/assets/dev_nobg.png"
             alt="Character"
-            objectFit="contain"
             width={1024}
             height={1024}
           />
