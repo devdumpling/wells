@@ -1,9 +1,19 @@
-import { Hero } from "@/components/Hero";
+import Image from "next/image";
 
-export default async function HomePage() {
+export default async function Character() {
   return (
-    <div>
-      <Hero title="{ refactoring... }" subtitle="> beep boop" />
-    </div>
+    <section>
+      <div className="flex flex-col items-center justify-center">
+        <div className="h-1/3 sm:h-1/2 sm:w-1/2">
+          <Image
+            src="/assets/dev_nobg.png"
+            alt="Character"
+            objectFit="contain"
+            width={1024}
+            height={1024}
+          />
+        </div>
+      </div>
+    </section>
   );
 }
