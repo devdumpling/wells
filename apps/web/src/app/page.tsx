@@ -3,7 +3,8 @@ import Image from "next/image";
 import devCharacter from "../../public/assets/dev_nobg.webp";
 import macbook from "../../public/assets/macbook.svg";
 import sweater from "../../public/assets/sweater.svg";
-import bunny from "../../public/assets/bunny.svg";
+import pants from "../../public/assets/pants.svg";
+import boots from "../../public/assets/boots.svg";
 
 import InventoryIcon from "@/components/InventoryIcon";
 
@@ -20,17 +21,17 @@ export default async function Character() {
           />
 
           {/* Positioning Inventory Icons */}
-          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[50%] left-[10%] rounded-md">
+          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[10%] right-[10%] rounded-md">
             <InventoryIcon src={macbook} />
           </div>
-          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[50%] right-[10%] rounded-md">
+          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[30%] right-[10%] rounded-md">
             <InventoryIcon src={sweater} />
           </div>
-          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 left-[10%] bottom-[10%] rounded-md">
-            <InventoryIcon src={bunny} />
+          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[50%] right-[10%] rounded-md">
+            <InventoryIcon src={pants} />
           </div>
-          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 bottom-[10%] right-[10%] rounded-md">
-            <InventoryIcon src={macbook} />
+          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[70%] right-[10%] rounded-md">
+            <InventoryIcon src={boots} />
           </div>
         </div>
       </div>
