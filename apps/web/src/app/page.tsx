@@ -21,17 +21,17 @@ export default async function Character() {
           />
 
           {/* Positioning Inventory Icons */}
-          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[10%] right-[10%] rounded-md">
-            <InventoryIcon src={macbook} />
+          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[10%] right-[10%] bg-transparent">
+            <InventoryIcon src={macbook} iconVariant="weapon" />
           </div>
-          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[30%] right-[10%] rounded-md">
-            <InventoryIcon src={sweater} />
+          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[30%] right-[10%] bg-transparent">
+            <InventoryIcon src={sweater} iconVariant="armor" />
           </div>
-          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[50%] right-[10%] rounded-md">
-            <InventoryIcon src={pants} />
+          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[50%] right-[10%] bg-transparent">
+            <InventoryIcon src={pants} iconVariant="accessory" />
           </div>
-          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[70%] right-[10%] rounded-md">
-            <InventoryIcon src={boots} />
+          <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[70%] right-[10%] bg-transparent">
+            <InventoryIcon src={boots} iconVariant="accessory" />
           </div>
         </div>
       </div>
