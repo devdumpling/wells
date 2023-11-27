@@ -9,17 +9,17 @@ export const WEAPON_TOOLTIP: Tooltip = {
 export const ARMOR_TOOLTIP: Tooltip = {
   title: "WFH Knit Sweater",
   description:
-    "Grants the wearer the `cozy` affliction, while confounding employers with their productivity.",
+    "Grants the wearer the cozy affliction, while confounding employers with their productivity.",
 };
 
 export const ACC_1_TOOLTIP: Tooltip = {
-  title: "Headphones of Unhearing",
+  title: "Crown of Unhearing",
   description:
-    "These noise-cancelling headphones are so good, you can't hear your own thoughts!",
+    "Noise-cancelling headphones so good, you can't hear your own thoughts!",
 };
 
 export const ACC_2_TOOLTIP: Tooltip = {
   title: "Favored Mug",
   description:
-    "Said to be favored by the gods themselves. To look into the contents is to look into the void.",
+    "Functionally lukewarm. To look into the contents is to look into the void.",
 };

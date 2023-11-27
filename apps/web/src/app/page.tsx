@@ -3,8 +3,8 @@ import Image from "next/image";
 import devCharacter from "../../public/assets/dev_nobg.webp";
 import macbook from "../../public/assets/macbook.svg";
 import sweater from "../../public/assets/sweater.svg";
-import pants from "../../public/assets/pants.svg";
-import boots from "../../public/assets/boots.svg";
+import headphones from "../../public/assets/headphones.svg";
+import mug from "../../public/assets/mug.svg";
 import {
   WEAPON_TOOLTIP,
   ARMOR_TOOLTIP,
@@ -43,14 +43,14 @@ export default async function Character() {
           </div>
           <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[50%] right-[10%] bg-transparent">
             <InventoryIcon
-              src={pants}
+              src={headphones}
               iconVariant="accessory"
               tooltip={ACC_1_TOOLTIP}
             />
           </div>
           <div className="absolute shadow-lg w-16 h-16 sm:h-32 sm:w-32 top-[70%] right-[10%] bg-transparent">
             <InventoryIcon
-              src={boots}
+              src={mug}
               iconVariant="accessory"
               tooltip={ACC_2_TOOLTIP}
             />
