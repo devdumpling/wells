@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 const Header: React.FC = () => {
   return (
     <header className="container flex items-center justify-center py-4 mx-auto sm:py-8">
-      <nav className="flex items-center space-x-4 font-pixelify">
+      <nav className="flex px-8 space-x-12 font-pixelify">
         <Link
           href="/"
           className={cn(buttonVariants({ variant: "link" }), "sm:text-lg")}
@@ -28,12 +28,6 @@ const Header: React.FC = () => {
           className={cn(buttonVariants({ variant: "link" }), "sm:text-lg")}
         >
           Quests
-        </Link>
-        <Link
-          href="/spells"
-          className={cn(buttonVariants({ variant: "link" }), "sm:text-lg")}
-        >
-          Spells
         </Link>
       </nav>
     </header>

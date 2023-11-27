@@ -16,20 +16,20 @@ import InventoryIcon from "@/components/InventoryIcon";
 
 export default async function Character() {
   return (
-    <section className="flex flex-row items-center justify-center my-8">
+    <section className="flex flex-row items-center justify-center">
       <div className="flex flex-col items-center justify-center max-w-screen-xl mx-4">
         <div className="flex flex-col items-center justify-center mx-8 font-mono hover:animate-pulse bg-gradient-to-r from-violet-500 to-primary bg-clip-text">
-          <h1 className="text-4xl font-extrabold tracking-tight text-transparent scroll-m-20 lg:text-5xl">
+          <h1 className="text-3xl font-extrabold tracking-tight text-transparent scroll-m-20 sm:text-4xl lg:text-5xl">
             &#9001; Dev Wells &#9002;
           </h1>
           <div className="flex flex-row items-center justify-center gap-8">
-            <span className="text-lg text-accent-foreground font-pixelify">
+            <span className="text-md sm:text-lg text-accent-foreground font-pixelify">
               LVL: 30
             </span>
-            <span className="text-lg text-accent-foreground font-pixelify">
+            <span className="text-md sm:text-lg text-accent-foreground font-pixelify">
               Software Engineer
             </span>
-            <span className="text-lg text-accent-foreground font-pixelify">
+            <span className="text-md sm:text-lg text-accent-foreground font-pixelify">
               Dad
             </span>
           </div>
