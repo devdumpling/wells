@@ -46,6 +46,7 @@ const InventoryIcon = ({
 }: InventoryIconProps) => {
   return (
     <HoverCard openDelay={300}>
+      { /* @ts-ignore */}      
       <HoverCardTrigger asChild>
         <Button
           className="w-full h-full p-0"
