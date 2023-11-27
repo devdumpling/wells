@@ -1,7 +1,13 @@
-const InventoryIcon = ({ svgIcon }) => {
+import Image from "next/image";
+
+interface InventoryIconProps {
+  src: string;
+}
+
+const InventoryIcon = ({ src }: InventoryIconProps) => {
   return (
-    <div className="flex items-center justify-center p-4 bg-white bg-opacity-50 rounded-lg shadow-md">
-      <div dangerouslySetInnerHTML={{ __html: svgIcon }} />
+    <div className="p-2 bg-opacity-50 rounded-md shadow-md opacity-90 hover:opacity-100 hover:animate-pulse bg-violet-50">
+      <Image src={src} alt="An image of an item in an inventory" priority width={128} height={128} />
     </div>
   );
 };

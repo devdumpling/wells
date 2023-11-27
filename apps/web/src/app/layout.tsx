@@ -30,7 +30,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-tertiary font-sans antialiased",
+          "min-h-screen font-sans antialiased",
           fontSans.variable,
           fontPixelify.variable
         )}

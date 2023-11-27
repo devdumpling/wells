@@ -81,7 +81,7 @@
       linear-gradient(90deg, #e9e7df 0.05em, transparent 0.1em);
 
     /* Set the size of the grid cells */
-    background-size: 1rem 1rem;
+    background-size: 1.5rem 1.5rem;
   }
 
   body::after {
