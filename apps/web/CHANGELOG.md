@@ -1,5 +1,11 @@
 # web
 
+## 0.6.1
+
+### Patch Changes
+
+- 57c1295: Init basic header and pages
+
 ## 0.6.0
 
 ### Minor Changes
