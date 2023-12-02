@@ -29,7 +29,7 @@ const iconVariants = {
 };
 
 interface InventoryIconProps {
-  src: string;
+  src: any;
   iconVariant?: keyof typeof iconVariants;
   tooltip: Tooltip;
 }
@@ -46,7 +46,7 @@ const InventoryIcon = ({
 }: InventoryIconProps) => {
   return (
     <HoverCard openDelay={300}>
-      { /* @ts-ignore */}      
+      {/* @ts-ignore */}
       <HoverCardTrigger asChild>
         <Button
           className="w-full h-full p-0"
