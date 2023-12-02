@@ -29,7 +29,7 @@ export default async function Character() {
             </span>
           </div>
         </div>
-        <div className="relative px-4 py-8 border-primary h-1/3 sm:h-2/3 sm:w-2/3">
+        <div className="relative px-4 py-8 h-1/3 sm:h-2/3 sm:w-2/3">
           {/* Character */}
           <Image
             src="/assets/dev_nobg.webp"
