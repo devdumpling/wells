@@ -1,5 +1,11 @@
 # web
 
+## 0.7.0
+
+### Minor Changes
+
+- 92436b3: Land on a landing page MVP
+
 ## 0.6.1
 
 ### Patch Changes
