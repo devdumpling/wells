@@ -2,14 +2,9 @@ import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { cn } from "@/lib/utils";
 
-// character = landing page
-// journal = blog
-// questlog = projects / jobs
-// spellbook = skills / tech stack
-
 const Header: React.FC = () => {
   return (
-    <header className="container flex items-center justify-center py-4 mx-auto sm:py-8">
+    <header className="container flex items-center justify-center py-4 mx-auto md:justify-end sm:py-8">
       <nav className="flex px-8 space-x-12 font-pixelify">
         <Link
           href="/"
