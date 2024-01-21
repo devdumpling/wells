@@ -28,11 +28,11 @@ export default function StatBlock() {
           <TableBody>
             <TableRow>
               <TableCell className="font-medium">Weapons</TableCell>
-              <TableCell>TypeScript</TableCell>
+              <TableCell>TypeScript, Rust</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Spells</TableCell>
-              <TableCell>Next, React</TableCell>
+              <TableCell>Next, React, GQL</TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Skills</TableCell>

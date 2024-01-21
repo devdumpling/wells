@@ -28,9 +28,11 @@ const iconVariants = {
   ),
 };
 
-interface InventoryIconProps {
+export type IconVariant = keyof typeof iconVariants;
+
+export interface InventoryIconProps {
   src: any;
-  iconVariant?: keyof typeof iconVariants;
+  iconVariant?: IconVariant;
   tooltip: Tooltip;
 }
 
