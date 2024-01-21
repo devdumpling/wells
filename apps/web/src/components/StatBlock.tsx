@@ -1,4 +1,5 @@
 import { TableCell, TableRow, TableBody, Table } from "@/components/ui/table";
+import Attributes from "./Attributes";
 
 export default function StatBlock() {
   return (
@@ -40,7 +41,10 @@ export default function StatBlock() {
             </TableRow>
           </TableBody>
         </Table>
-      </div>      
+      </div>
+      <div className="space-y-4">
+        <Attributes />
+      </div>
     </div>
   );
 }
