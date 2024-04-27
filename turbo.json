@@ -6,10 +6,8 @@
       "outputs": ["dist/**"]
     },
     "lint": {
-      "outputs": []
-    },
-    "lint:fix": {
-      "outputs": []
+      "outputs": [],
+      "dependsOn": ["^lint"]
     },
     "dev": {
       "cache": false,

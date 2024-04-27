@@ -1,42 +1,30 @@
 {
-  "name": "wells",
+  "name": "@wells/root",
   "version": "0.0.1",
   "description": "Dev Wells monorepo",
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "build:web": "turbo run build --filter=wells.web",
-    "build:docs": "turbo run build --filter=wells.docs",
-    "changeset": "changeset",
+    "build:web": "turbo run build --filter=@wells/web",
+    "build:docs": "turbo run build --filter=@wells/docs",    
     "clean": "turbo run clean && rm -rf node_modules",
     "clean:deep": "turbo run clean && pnpm install",
     "dev": "turbo run dev --parallel",
-    "dev:web": "turbo run dev --filter=wells.web",
-    "dev:docs": "turbo run dev --filter=wells.docs",
+    "dev:web": "turbo run dev --filter=@wells/web",
+    "dev:docs": "turbo run dev --filter=@wells/docs",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "lint": "turbo run lint",
-    "lint:fix": "turbo run lint:fix",
-    "release": "turbo run build --filter=docs^... && changeset publish"
+    "lint": "turbo run lint"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.2",
-    "@types/node": "^20.9.2",
-    "eslint": "^8.54.0",
+    "@changesets/cli": "2.27.1",
+    "@types/node": "^20.12.7",
+    "eslint": "9.1.0",
     "eslint-config-wells": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"
   },
-  "pnpm": {
-    "overrides": {
-      "@types/react": "^18.2.25",
-      "@types/react-dom": "^18.2.11",
-      "eslint": "^8.51.0",
-      "react": "^18.2.0",
-      "react-dom": "^18.2.0"
-    }
-  },
   "engines": {
-    "node": ">=20",
+    "node": ">=21",
     "pnpm": ">=8.9.2"
   }
 }

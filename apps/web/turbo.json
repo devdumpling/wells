@@ -3,7 +3,7 @@
   "pipeline": {
     "build": {
       "env": ["DOCS_URL", "NEXT_PUBLIC_DOMAIN"],
-      "outputs": [".next/**"]
+      "outputs": [".next/**", "!.next/cache/**"]
     }
   }
 }
