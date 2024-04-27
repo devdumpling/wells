@@ -24,7 +24,7 @@
     "turbo": "latest"
   },
   "engines": {
-    "node": ">=21",
-    "pnpm": ">=8.9.2"
+    "node": ">=22",
+    "pnpm": ">=9"
   }
 }
