@@ -6,7 +6,7 @@
   "scripts": {
     "build": "turbo run build",
     "build:web": "turbo run build --filter=@wells/web",
-    "build:docs": "turbo run build --filter=@wells/docs",    
+    "build:docs": "turbo run build --filter=@wells/docs",
     "clean": "turbo run clean && rm -rf node_modules",
     "clean:deep": "turbo run clean && pnpm install",
     "dev": "turbo run dev --parallel",
