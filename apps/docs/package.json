@@ -1,5 +1,5 @@
 {
-  "name": "wells.docs",
+  "name": "@wells/docs",
   "version": "0.3.0",
   "private": true,
   "description": "Docs site for Wells monorepo",
@@ -13,17 +13,17 @@
   },
   "author": "devdumpling",
   "dependencies": {
-    "next": "^14",
-    "nextra": "^2.13.2",
-    "nextra-theme-docs": "^2.13.2",
-    "react": "^18",
-    "react-dom": "^18"
+    "next": "latest",
+    "nextra": "^2.13.4",
+    "nextra-theme-docs": "^2.13.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/react": "^18",
-    "eslint": "^8.51.0",
+    "@types/react": "^18.3.1",
+    "@wells/tsconfig": "workspace:*",
+    "eslint": "8",
     "eslint-config-wells": "workspace:*",
-    "tsconfig": "workspace:*",
-    "typescript": "^5.2.2"
+    "typescript": "^5.4.5"
   }
 }
