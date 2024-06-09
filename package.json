@@ -21,7 +21,7 @@
     "eslint": "^8.57.0",
     "eslint-config-wells": "workspace:*",
     "prettier": "latest",
-    "turbo": "^1.13.3"
+    "turbo": "^2.0.3"
   },
   "engines": {
     "node": ">=20"
