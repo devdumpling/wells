@@ -1,9 +1,17 @@
 {
-  "extends": ["//"],
-  "pipeline": {
+  "extends": [
+    "//"
+  ],
+  "tasks": {
     "build": {
-      "env": ["DOCS_URL", "NEXT_PUBLIC_DOMAIN"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "env": [
+        "DOCS_URL",
+        "NEXT_PUBLIC_DOMAIN"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**"
+      ]
     }
   }
 }
