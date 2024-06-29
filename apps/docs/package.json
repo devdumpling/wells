@@ -20,7 +20,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/react": "^18.3.2",
+    "@types/react": "^18.3.3",
     "@wells/tsconfig": "workspace:*",
     "eslint": "^8.57.0",
     "eslint-config-wells": "workspace:*",
