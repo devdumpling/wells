@@ -1,39 +1,29 @@
-const BIO_CODE = `
-const dev = {
-  pronouns: ['they', 'them', 'he', 'him'],
-  currentRole: 'Lead Engineer, Frontend Platform Engineering @ GoodRx',
-  techStack: ['React', 'Next.js', 'TypeScript', 'Node/Deno/bun', 'Turborepo'],
-  hobbies: ['Reading', 'Writing', 'Climbing'],
-};
-`;
-
-const PROPERTIES = ["dad", "soft", "climb", "read", "play"];
-const COLORS = ["fuchsia", "sky", "teal", "amber", "indigo"];
-
-const PropertyBadge = ({ text }: { text: string }) => {
-  const index = PROPERTIES.indexOf(text);
-  const color = COLORS[index % COLORS.length];
-
-  return (
-    <span
-      className={`inline-block rounded-full px-3 py-1 text-sm font-semibold dark:text-${color}-500`}
-    >
-      {text}
-    </span>
-  );
-};
-
 export default function Home() {
   return (
-    <main>
-      <section className="container mx-auto font-mono p-4 dark:text-fuchsia-50">
-        <h1 className="text-3xl font-bold">Dev(on) Wells</h1>
+    <main className="p-4">
+      <section className="container mx-auto font-mono text-sky-950 dark:text-sky-500">
+        <h1 className="text-3xl font-bold">dev.wells</h1>
+        <p className="text-xs text-stone-500 dark:text-stone-400">
+          lvl 31 | they/he
+        </p>
+      </section>
 
-        {PROPERTIES.map((text) => (
-          <PropertyBadge key={text} text={text} />
-        ))}
-
-        <pre className="my-4 text-sm font-mono dark:text-stone-400"></pre>
+      <section className="container mx-auto font-mono  leading-8 italic py-4 my-4  text-amber-950 dark:text-amber-100">
+        <p className="text-md">
+          midwest{" "}
+          <span className="font-bold text-amber-900 dark:text-amber-300">
+            dwell
+          </span>
+          er{" "}
+        </p>
+        <p>code smeller</p>
+        <p>
+          daughter dad,
+          <br />
+          put the kids to bed
+          <br />
+          story teller.
+        </p>
       </section>
     </main>
   );
