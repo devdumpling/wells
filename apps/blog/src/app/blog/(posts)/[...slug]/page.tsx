@@ -1,3 +1,3 @@
 export default function Post() {
-  return <main></main>;
+  return <article>ipsum</article>;
 }
