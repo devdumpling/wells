@@ -5,12 +5,12 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
-    "build:web": "turbo run build --filter=@wells/web",
+    "build:web": "turbo run build --filter=@wells/blog",
     "build:docs": "turbo run build --filter=@wells/docs",
     "clean": "turbo run clean && rm -rf node_modules",
     "clean:deep": "turbo run clean && pnpm install",
     "dev": "turbo run dev --parallel",
-    "dev:web": "turbo run dev --filter=@wells/web",
+    "dev:web": "turbo run dev --filter=@wells/blog",
     "dev:docs": "turbo run dev --filter=@wells/docs",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint"

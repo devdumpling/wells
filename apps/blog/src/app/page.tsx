@@ -1,10 +1,10 @@
 export default function Home() {
   return (
     <main className="p-4">
-      <section className="container mx-auto font-mono text-sky-950 dark:text-sky-500">
-        <h1 className="text-3xl font-bold">dev.wells</h1>
-        <p className="text-xs text-stone-500 dark:text-stone-400">
-          lvl 31 | they/he
+      <section className="container mx-auto font-mono text-sky-950 dark:text-sky-400">
+        <h1 className="sm:text-5xl text-3xl font-pixel">dev.wells</h1>
+        <p className="text-xs sm:text-sm font-pixel tracking-wide text-stone-500 dark:text-stone-400">
+          lvl 31 -- 👩‍💻 code barbarian 🍖 -- they/he
         </p>
       </section>
 
@@ -16,7 +16,6 @@ export default function Home() {
           </span>
           er{" "}
         </p>
-        <p>code smeller</p>
         <p>
           daughter dad,
           <br />
