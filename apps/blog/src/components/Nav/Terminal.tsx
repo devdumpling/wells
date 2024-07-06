@@ -12,7 +12,7 @@ const DirectoryLink = ({
   children: React.ReactNode;
 }) => {
   return (
-    <Link href={href} className="text-fuchsia-500 hover:text-fuchsia-400">
+    <Link href={href} className="text-fuchsia-400 hover:text-fuchsia-300">
       {children}
     </Link>
   );
