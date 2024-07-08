@@ -1,6 +1,12 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
+import {
+  CommandContext,
+  execCommand,
+  isValidCommand,
+  parseCommand,
+} from "./lib/command";
 
 /**
  * StdInput takes user input as if they were typing in the terminal.
@@ -13,18 +19,30 @@ import { useRouter } from "next/navigation";
  */
 export const StdIn = () => {
   const router = useRouter();
+  const pathname = usePathname();
 
   const submitAction = async (formData: any) => {
     const command = formData.get("command");
 
-    const args = command.split(" ");
+    if (!command) return;
 
-    // check if command is valid
-    if (args[0] === "cd" && args[1]) {
-      // TODO: Implement router
-      router.push(args[1]);
-    } else {
-      console.log("Invalid command");
+    try {
+      const { cmd, args } = parseCommand(command);
+
+      const ctx: CommandContext = {
+        cmd,
+        args,
+        router,
+        pathname,
+      };
+
+      if (isValidCommand(cmd)) {
+        execCommand(ctx);
+      } else {
+        console.log("Invalid command");
+      }
+    } catch (error) {
+      console.error(error);
     }
   };
 

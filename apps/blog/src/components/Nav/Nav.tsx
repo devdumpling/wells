@@ -21,7 +21,7 @@ export const NavItem = ({
 export const Nav = () => {
   return (
     <nav className="sticky bg-inherit bottom-0 w-full p-4 border-t-[1px] dark:border-y-stone-800">
-      <div className="flex font-mono mb-2">
+      <div className="flex font-mono mb-1">
         <NavItem href="/">~/dev</NavItem>
         <CurrentWorkingDirectory />
       </div>
